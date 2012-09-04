@@ -3,5 +3,7 @@
 /ModbusClassTCP/obj
 /ModbusConsole/bin
 /ModbusConsole/obj
+/DBConsole/bin
+/DBConsole/obj
 /ModbusLib/bin
 /ModbusLib/obj

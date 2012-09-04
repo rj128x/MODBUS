@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using ModbusLib.Piramida;
+using System.Data.SqlClient;
 
 namespace ModbusLib
 {
@@ -93,7 +95,7 @@ namespace ModbusLib
 
 
 		public DataDBWriter(string fileName, ModbusInitDataArray initArray) {
-			FileName = fileName;			
+			FileName = fileName;
 			Headers = new List<int>();
 			Dates = new List<DateTime>();
 			Data = new SortedList<int, DataDBRecord>();
@@ -129,11 +131,11 @@ namespace ModbusLib
 
 		protected void readData() {
 			string valsStr;
-			while ((valsStr=Reader.ReadLine())!=null){
+			while ((valsStr = Reader.ReadLine()) != null) {
 				string[]valsArr=valsStr.Split(';');
 				bool isFirst=false;
 				int index=0;
-				foreach (string valStr in valsArr) {				
+				foreach (string valStr in valsArr) {
 					if (!isFirst) {
 						double val=Convert.ToDouble(valStr);
 						int header=Headers[index - 1];
@@ -152,24 +154,61 @@ namespace ModbusLib
 					isFirst = false;
 				}
 			}
-			
+
 		}
 
 		protected void writeData() {
 			SortedList<string,List<string>> inserts=new SortedList<string, List<string>>();
+			SortedList<string,List<string>> deletes=new SortedList<string, List<string>>();
 			string insertIntoHeader="INSERT INTO Data (parnumber,object,item,value0,objtype,data_date,rcvstamp)";
+			string frmt="SELECT {0}, {1}, {2}, {3}, {4}, {5}, {6}";
+			string frmDel="(parnumber={0} and object={1} and objType={2} and data_date={3})";
 			foreach (DataDBRecord rec in Data.Values) {
-				if (InitArray.FullData[rec.Header].WriteToDB) {
-					ModbusInitData init=InitArray.FullData[rec.Header];
-					string insert=String.Format("SELECT {0}, {1}, {2}, {3}, {4}, {5}, {6}", init.ParNumber, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now);
-					if (!inserts.ContainsKey(init.DBName)) {
-						inserts.Add(init.DBName, new List<string>());
+				ModbusInitData init=InitArray.FullData[rec.Header];
+				if (init.WriteToDBHH || init.WriteToDBMin) {
+					if (init.WriteToDBMin) {
+						string insert=String.Format(frmt, init.ParNumberMin, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now);
+						string delete=String.Format(frmDel, init.ParNumberMin, init.Obj, init.ObjType, Date.AddMinutes(30));
+						if (!inserts.ContainsKey(init.DBNameMin)) {
+							inserts.Add(init.DBNameMin, new List<string>());
+							deletes.Add(init.DBNameMin, new List<string>());
+						}
+
+						inserts[init.DBNameMin].Add(insert);
+						deletes[init.DBNameMin].Add(delete);
 					}
-					inserts[init.DBName].Add(insert);
+
+					if (init.WriteToDBHH) {
+						string insert=String.Format(frmt, init.ParNumberHH, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(1), DateTime.Now);
+						string delete=String.Format(frmDel, init.ParNumberHH, init.Obj, init.ObjType, Date.AddMinutes(1));
+						if (!inserts.ContainsKey(init.DBNameHH)) {
+							inserts.Add(init.DBNameHH, new List<string>());
+							deletes.Add(init.DBNameHH, new List<string>());
+						}
+						inserts[init.DBNameHH].Add(insert);
+						deletes[init.DBNameHH].Add(delete);
+					}
 				}
 			}
 
+			foreach (KeyValuePair<string,List<string>> de in deletes) {
+				foreach (string del in de.Value) {
+					string delSQL=String.Format("DELETE from DATA where {0}", del);
+					SqlCommand command=null;
+					command = PiramidaAccess.getConnection(de.Key).CreateCommand();
+					command.CommandText = delSQL;
+					command.ExecuteNonQuery();
+				}
+			}
 
+			foreach (KeyValuePair<string,List<string>> de in inserts) {
+				string insertsSQL=String.Join("\nUNION ALL\n", de.Value);
+				string insertSQL=String.Format("{0}\n{1}", insertIntoHeader, insertsSQL);
+				SqlCommand command=null;
+				command = PiramidaAccess.getConnection(de.Key).CreateCommand();
+				command.CommandText = insertSQL;
+				command.ExecuteNonQuery();
+			}
 		}
 	}
 }

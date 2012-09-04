@@ -5,9 +5,9 @@
 	<DataPath>C:/MBData</DataPath>
 	<Databases>
 		<DBInfo>
-			<ID>P3000</ID>
+			<ID>PSV</ID>
 			<Address>192.168.140.240</Address>
-			<DBName>Piramida3000</DBName>
+			<DBName>PiramidaSV</DBName>
 			<User>sa</User>
 			<Password>pswd</Password>
 		</DBInfo>
