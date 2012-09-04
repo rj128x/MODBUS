@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ModbusLib
 {
+	public enum RWModeEnum { hh, min }
 	public class ModbusInitData
 	{
 		private string id;
@@ -36,22 +37,79 @@ namespace ModbusLib
 		}
 
 
-		private bool writeToDB;
-		public bool WriteToDB {
-			get { return writeToDB; }
-			set { writeToDB = value; }
+		private bool writeToDBMin;
+		[System.Xml.Serialization.XmlAttribute]
+		public bool WriteToDBMin {
+			get { return writeToDBMin; }
+			set { writeToDBMin = value; }
 		}
 
-		private int parNumber;
-		public int ParNumber {
-			get { return parNumber; }
-			set { parNumber = value; }
+		private bool writeToDBHH;
+		[System.Xml.Serialization.XmlAttribute]
+		public bool WriteToDBHH {
+			get { return writeToDBHH; }
+			set { writeToDBHH = value; }
+		}
+
+		private int parNumberMin;
+		[System.Xml.Serialization.XmlAttribute]
+		public int ParNumberMin {
+			get { return parNumberMin; }
+			set { parNumberMin = value; }
+		}
+
+		private int parNumberHH;
+		[System.Xml.Serialization.XmlAttribute]
+		public int ParNumberHH {
+			get { return parNumberHH; }
+			set { parNumberHH = value; }
+		}
+
+		private int obj;
+		[System.Xml.Serialization.XmlAttribute]
+		public int Obj {
+			get { return obj; }
+			set { obj = value; }
+		}
+
+		private int objType;
+		[System.Xml.Serialization.XmlAttribute]
+		public int ObjType {
+			get { return objType; }
+			set { objType = value; }
+		}
+
+		private string dbNameMin;
+		[System.Xml.Serialization.XmlAttribute]
+		public string DBNameMin {
+			get { return dbNameMin; }
+			set { dbNameMin = value; }
+		}
+
+		private string dbNameHH;
+		[System.Xml.Serialization.XmlAttribute]
+		public string DBNameHH {
+			get { return dbNameHH; }
+			set { dbNameHH = value; }
+		}
+
+		private int item;
+		[System.Xml.Serialization.XmlAttribute]
+		public int Item {
+			get { return item; }
+			set { item = value; }
 		}
 		
 	}
 
 	public class ModbusInitDataArray
 	{
+		private string id;
+		public string ID {
+			get { return id; }
+			set { id = value; }
+		}
+
 		private string ip;
 		public string IP {
 			get { return ip; }
@@ -68,6 +126,18 @@ namespace ModbusLib
 		public List<ModbusInitData> Data {
 			get { return data; }
 			set { data = value; }
+		}
+
+		private bool writeMin;
+		public bool WriteMin {
+			get { return writeMin; }
+			set { writeMin = value; }
+		}
+
+		private bool writeHH;
+		public bool WriteHH {
+			get { return writeHH; }
+			set { writeHH = value; }
 		}
 
 		private SortedList<int,ModbusInitData> fullData;

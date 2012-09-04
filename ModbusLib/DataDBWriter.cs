@@ -79,17 +79,32 @@ namespace ModbusLib
 			set { dates = value; }
 		}
 
-		public DataDBWriter(string fileName) {
+		private DateTime date;
+		public DateTime Date {
+			get { return date; }
+			set { date = value; }
+		}
+
+		private ModbusInitDataArray initArray;
+		public ModbusInitDataArray InitArray {
+			get { return initArray; }
+			set { initArray = value; }
+		}
+
+
+		public DataDBWriter(string fileName, ModbusInitDataArray initArray) {
 			FileName = fileName;			
 			Headers = new List<int>();
 			Dates = new List<DateTime>();
 			Data = new SortedList<int, DataDBRecord>();
+			InitArray = initArray;
 		}
 
 		public void ReadAll() {
 			reader = new StreamReader(fileName);
 			readHeader();
 			readData();
+			Reader.Close();
 			foreach (DataDBRecord rec in Data.Values) {
 				rec.Avg = rec.Avg / rec.Count;
 			}
@@ -105,6 +120,8 @@ namespace ModbusLib
 					int val=Convert.ToInt32(header);
 					Headers.Add(val);
 					Data.Add(val, new DataDBRecord(val));
+				} else {
+					Date = DateTime.Parse(header);
 				}
 				isFirst = false;
 			}
@@ -136,6 +153,23 @@ namespace ModbusLib
 				}
 			}
 			
+		}
+
+		protected void writeData() {
+			SortedList<string,List<string>> inserts=new SortedList<string, List<string>>();
+			string insertIntoHeader="INSERT INTO Data (parnumber,object,item,value0,objtype,data_date,rcvstamp)";
+			foreach (DataDBRecord rec in Data.Values) {
+				if (InitArray.FullData[rec.Header].WriteToDB) {
+					ModbusInitData init=InitArray.FullData[rec.Header];
+					string insert=String.Format("SELECT {0}, {1}, {2}, {3}, {4}, {5}, {6}", init.ParNumber, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now);
+					if (!inserts.ContainsKey(init.DBName)) {
+						inserts.Add(init.DBName, new List<string>());
+					}
+					inserts[init.DBName].Add(insert);
+				}
+			}
+
+
 		}
 	}
 }

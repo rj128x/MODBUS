@@ -37,27 +37,56 @@ namespace ModbusLib
 			get { return headerStr; }
 			set { headerStr = value; }
 		}
-		
-		protected void getWriter(DateTime date) {
+
+		private RWModeEnum rwMode;
+		public RWModeEnum RWMode {
+			get { return rwMode; }
+			set { rwMode = value; }
+		}
+
+		public static string GetDir(ModbusInitDataArray InitArray, RWModeEnum RWMode, DateTime date) {
+			string dirName=String.Format("{0}\\{1}\\{2}\\{3}",Settings.single.DataPath,InitArray.ID,RWMode.ToString(),date.ToString("yyyy_MM_dd"));
+			return dirName;
+		}
+
+		public static String GetFileName(ModbusInitDataArray InitArray, RWModeEnum RWMode, DateTime date,bool createDir) {
+			string dirName=GetDir(InitArray, RWMode, date);
+			if (createDir) {
+				Directory.CreateDirectory(dirName);
+			}
+			string fileName=String.Format("{0}\\data_{1}.csv",dirName,date.ToString("hh_mm"));
+			return fileName;
+		}
+
+		public static DateTime GetFileDate(DateTime date, RWModeEnum RWMode) {
 			int min=date.Minute;
-			min = min < 30 ? 0 : 30;
+			if (RWMode == RWModeEnum.hh) {
+				min = min < 30 ? 0 : 30;
+			}
 			DateTime dt=new DateTime(date.Year, date.Month, date.Day, date.Hour - 2, min, 0);
+			return dt;
+		}
+				
+		protected void getWriter(DateTime date) {
+			DateTime dt=GetFileDate(DateTime.Now, RWMode);
 			if (dt != currentDate) {
 				try {					
 					currentWriter.Close();
 				} catch (Exception e) { }
 				currentDate = dt;
-				string fileName=String.Format("{0}\\data_{1}.csv",Settings.single.DataPath,currentDate.ToString("yyyy_MM_dd_hh_mm"));
+
+				string fileName=GetFileName(InitArray, RWMode, currentDate, true);
+				
+				HeaderStr = String.Format("{0};{1}", CurrentDate.ToString("dd.MM.yyyy hh:mm:ss"), String.Join(";", Headers));
 				bool newFile=!File.Exists(fileName);				
 				currentWriter=new StreamWriter(fileName,true);
 				if (newFile) {
 					currentWriter.WriteLine(HeaderStr);
 				}
 			}
-
 		}
 
-		public ModbusDataWriter(ModbusInitDataArray arr) {
+		public ModbusDataWriter(ModbusInitDataArray arr, RWModeEnum mode = RWModeEnum.hh) {
 			InitArray = arr;
 			Headers = new List<int>();
 			foreach (ModbusInitData data in arr.Data) {
@@ -65,7 +94,7 @@ namespace ModbusLib
 					Headers.Add(data.Addr);
 				}
 			}
-			HeaderStr = String.Format("date;{0}", String.Join(";", Headers));
+			rwMode = mode;
 		}
 
 		public void writeData( SortedList<int, double> ResultData) {

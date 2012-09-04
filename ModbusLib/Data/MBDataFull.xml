@@ -3,6 +3,9 @@
 							xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<IP>192.168.140.230</IP>
 	<Port>502</Port>
+	<ID>MB</ID>
+	<WriteMin>1</WriteMin>
+	<WriteHH>1</WriteHH>
 	<Data>
 		<ModbusInitData ID='0' Addr='0' Name='Ток ШСВ 220' Scale='1' />
 		<ModbusInitData ID='1' Addr='1' Name='Ток ШСВ 220_FLAG' Scale='1' />

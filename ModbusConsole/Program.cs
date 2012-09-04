@@ -11,41 +11,49 @@ namespace ModbusConsole
 {
 	class Program
 	{
-		static ModbusInitDataArray arr;
-		static ModbusDataWriter mbDW;
+		static ModbusInitDataArray arrHH;
+
+		static ModbusDataWriter mbDWHH;
+		static ModbusDataWriter mbDWMin;
+
 		static int step=0;
-		static ModbusDataReader mbDR;
+		static ModbusDataReader mbDRHH;
 
 		static void Main(string[] args) {
 			
 			try {
 				Settings.init();
 				Logger.init(Logger.createFileLogger(Settings.single.LogPath,"log", new Logger()));
-				arr=XMLSer<ModbusInitDataArray>.fromXML("Data\\MBData.xml");				
-				arr.processData();
-				Logger.Info(String.Format("Чтение настроек ModBus: {0} записей", arr.MaxAddr));
+				arrHH = XMLSer<ModbusInitDataArray>.fromXML("Data\\MBDataFull.xml");
+				arrHH.processData();
+				Logger.Info(String.Format("Чтение настроек ModBus: {0} записей", arrHH.MaxAddr));
 				
-				Logger.Info("start");
+				mbDWHH = new ModbusDataWriter(arrHH);
+				mbDWMin = new ModbusDataWriter(arrHH,RWModeEnum.min);
 
-				mbDW=new ModbusDataWriter(arr);
+				ModbusServer svHH=new ModbusServer(arrHH.IP,(ushort)arrHH.Port);
+				mbDRHH = new ModbusDataReader(svHH, arrHH);
+				mbDRHH.OnFinish += new FinishEvent(mbDRHH_OnFinish);
+				mbDRHH.readData();
 
-				ModbusServer sv=new ModbusServer(arr.IP,(ushort)arr.Port);
-				mbDR = new ModbusDataReader(sv, arr);
-				mbDR.OnFinish += new FinishEvent(mbDR_OnFinish);
-				mbDR.readData();
 				Console.ReadLine();
 			} catch (Exception e) {
 				Logger.Error(e.ToString());
 			}
 		}
 
-		static void mbDR_OnFinish(SortedList<int, double> ResultData) {
+		static void mbDRHH_OnFinish(SortedList<int, double> ResultData) {
 			step++;
 			Console.WriteLine(step);
-			mbDW.writeData(ResultData);
+			
+			mbDWHH.writeData(ResultData);
+			mbDWMin.writeData(ResultData);
+
 			Thread.Sleep(5000);
-			mbDR.readData();
+			mbDRHH.readData();
 		}
 
+		
 	}
 }
+
