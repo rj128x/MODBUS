@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusTCP", "ModbusTCP.csproj", "{F2485353-AF87-48FA-8E92-8A6B7779443F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F2485353-AF87-48FA-8E92-8A6B7779443F}.Debug.ActiveCfg = Debug|.NET
+		{F2485353-AF87-48FA-8E92-8A6B7779443F}.Debug.Build.0 = Debug|.NET
+		{F2485353-AF87-48FA-8E92-8A6B7779443F}.Release.ActiveCfg = Release|.NET
+		{F2485353-AF87-48FA-8E92-8A6B7779443F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

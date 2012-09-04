@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModbusInitDataArray xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<IP>192.168.140.230</IP>
+	<Port>502</Port>
+	<Data>
+		<ModbusInitData ID='0' Addr='0' Name='Ток ШСВ 220' Scale='1' />
+		<ModbusInitData ID='1' Addr='1' Name='Ток ШСВ 220_FLAG' Scale='1' />
+		<ModbusInitData ID='2' Addr='2' Name='Ток ШСВ 110' Scale='1' />
+		<ModbusInitData ID='3' Addr='3' Name='Ток ШСВ 110_FLAG' Scale='1' />
+		<ModbusInitData ID='4' Addr='4' Name='' Scale='1' />
+		<ModbusInitData ID='5' Addr='5' Name='' Scale='1' />
+		<ModbusInitData ID='6' Addr='6' Name='U 1 с.ш. 220' Scale='0.1' />
+		<ModbusInitData ID='7' Addr='7' Name='U 1 с.ш. 220_FLAG' Scale='1' />
+		<ModbusInitData ID='8' Addr='8' Name='F 1 с.ш. 220' Scale='0.01' />
+		<ModbusInitData ID='9' Addr='9' Name='F 1 с.ш. 220_FLAG' Scale='1' />
+		<ModbusInitData ID='10' Addr='10' Name='U 1 с.ш. 110' Scale='0.1' />
+		<ModbusInitData ID='11' Addr='11' Name='U 1 с.ш. 110_FLAG' Scale='1' />
+		<ModbusInitData ID='12' Addr='12' Name='F 1 с.ш. 110' Scale='0.01' />
+		<ModbusInitData ID='13' Addr='13' Name='F 1 с.ш. 110_FLAG' Scale='1' />
+		<ModbusInitData ID='14' Addr='14' Name='' Scale='1' />
+		<ModbusInitData ID='15' Addr='15' Name='' Scale='1' />
+		<ModbusInitData ID='16' Addr='16' Name='' Scale='1' />
+		<ModbusInitData ID='17' Addr='17' Name='' Scale='1' />
+		<ModbusInitData ID='18' Addr='18' Name='U 2 с.ш. 220' Scale='0.1' />
+		<ModbusInitData ID='19' Addr='19' Name='U 2 с.ш. 220_FLAG' Scale='1' />
+		<ModbusInitData ID='20' Addr='20' Name='F 2 с.ш. 220' Scale='0.01' />
+		<ModbusInitData ID='21' Addr='21' Name='F 2 с.ш. 220_FLAG' Scale='1' />
+		<ModbusInitData ID='22' Addr='22' Name='U 2 с.ш. 110' Scale='0.1' />
+		<ModbusInitData ID='23' Addr='23' Name='U 2 с.ш. 110_FLAG' Scale='1' />
+		<ModbusInitData ID='24' Addr='24' Name='F 2 с.ш. 110' Scale='0.01' />
+		<ModbusInitData ID='25' Addr='25' Name='F 2 с.ш. 110_FLAG' Scale='1' />
+		<ModbusInitData ID='26' Addr='26' Name='' Scale='1' />
+		<ModbusInitData ID='27' Addr='27' Name='' Scale='1' />
+		<ModbusInitData ID='28' Addr='28' Name='' Scale='1' />
+		<ModbusInitData ID='29' Addr='29' Name='' Scale='1' />
+		<ModbusInitData ID='30' Addr='30' Name='Иж-1 220' Scale='1' />
+		<ModbusInitData ID='31' Addr='31' Name='Иж-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='32' Addr='32' Name='Иж-1 220' Scale='0.1' />
+		<ModbusInitData ID='33' Addr='33' Name='Иж-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='34' Addr='34' Name='Иж-1 220' Scale='0.1' />
+		<ModbusInitData ID='35' Addr='35' Name='Иж-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='36' Addr='36' Name='Число групп генераторов' Scale='1' />
+		<ModbusInitData ID='37' Addr='37' Name='Состав группы №1' Scale='1' />
+		<ModbusInitData ID='38' Addr='38' Name='Состав группы №2' Scale='1' />
+		<ModbusInitData ID='39' Addr='39' Name='Состав группы №3' Scale='1' />
+		<ModbusInitData ID='40' Addr='40' Name='Состав группы №4' Scale='1' />
+		<ModbusInitData ID='41' Addr='41' Name='Состав группы №5' Scale='1' />
+		<ModbusInitData ID='42' Addr='42' Name='Состав группы №6' Scale='1' />
+		<ModbusInitData ID='43' Addr='43' Name='Состав группы №7' Scale='1' />
+		<ModbusInitData ID='44' Addr='44' Name='Состав группы №8' Scale='1' />
+		<ModbusInitData ID='45' Addr='45' Name='Состав группы №9' Scale='1' />
+		<ModbusInitData ID='46' Addr='46' Name='Состав группы №10' Scale='1' />
+		<ModbusInitData ID='47' Addr='47' Name='' Scale='1' />
+		<ModbusInitData ID='48' Addr='48' Name='Иж-2 220' Scale='1' />
+		<ModbusInitData ID='49' Addr='49' Name='Иж-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='50' Addr='50' Name='Иж-2 220' Scale='0.1' />
+		<ModbusInitData ID='51' Addr='51' Name='Иж-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='52' Addr='52' Name='Иж-2 220' Scale='0.1' />
+		<ModbusInitData ID='53' Addr='53' Name='Иж-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='54' Addr='54' Name='Задание группы №1' Scale='1' />
+		<ModbusInitData ID='55' Addr='55' Name='Задание группы №2' Scale='1' />
+		<ModbusInitData ID='56' Addr='56' Name='Задание группы №3' Scale='1' />
+		<ModbusInitData ID='57' Addr='57' Name='Задание группы №4' Scale='1' />
+		<ModbusInitData ID='58' Addr='58' Name='Задание группы №5' Scale='1' />
+		<ModbusInitData ID='59' Addr='59' Name='Задание группы №6' Scale='1' />
+		<ModbusInitData ID='60' Addr='60' Name='Задание группы №7' Scale='1' />
+		<ModbusInitData ID='61' Addr='61' Name='Задание группы №8' Scale='1' />
+		<ModbusInitData ID='62' Addr='62' Name='Задание группы №9' Scale='1' />
+		<ModbusInitData ID='63' Addr='63' Name='Задание группы №10' Scale='1' />
+		<ModbusInitData ID='64' Addr='64' Name='' Scale='1' />
+		<ModbusInitData ID='65' Addr='65' Name='' Scale='1' />
+		<ModbusInitData ID='66' Addr='66' Name='Кау-1 220' Scale='1' />
+		<ModbusInitData ID='67' Addr='67' Name='Кау-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='68' Addr='68' Name='Кау-1 220' Scale='0.1' />
+		<ModbusInitData ID='69' Addr='69' Name='Кау-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='70' Addr='70' Name='Кау-1 220' Scale='0.1' />
+		<ModbusInitData ID='71' Addr='71' Name='Кау-1 220_FLAG' Scale='1' />
+		<ModbusInitData ID='72' Addr='72' Name='Задание P, ген. №1' Scale='1' />
+		<ModbusInitData ID='73' Addr='73' Name='Задание P, ген. №2' Scale='1' />
+		<ModbusInitData ID='74' Addr='74' Name='Задание P, ген. №3' Scale='1' />
+		<ModbusInitData ID='75' Addr='75' Name='Задание P, ген. №4' Scale='1' />
+		<ModbusInitData ID='76' Addr='76' Name='Задание P, ген. №5' Scale='1' />
+		<ModbusInitData ID='77' Addr='77' Name='Задание P, ген. №6' Scale='1' />
+		<ModbusInitData ID='78' Addr='78' Name='Задание P, ген. №7' Scale='1' />
+		<ModbusInitData ID='79' Addr='79' Name='Задание P, ген. №8' Scale='1' />
+		<ModbusInitData ID='80' Addr='80' Name='Задание P, ген. №9' Scale='1' />
+		<ModbusInitData ID='81' Addr='81' Name='Задание P, ген. №10' Scale='1' />
+		<ModbusInitData ID='82' Addr='82' Name='' Scale='1' />
+		<ModbusInitData ID='83' Addr='83' Name='' Scale='1' />
+		<ModbusInitData ID='84' Addr='84' Name='Кау-2 220' Scale='1' />
+		<ModbusInitData ID='85' Addr='85' Name='Кау-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='86' Addr='86' Name='Кау-2 220' Scale='0.1' />
+		<ModbusInitData ID='87' Addr='87' Name='Кау-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='88' Addr='88' Name='Кау-2 220' Scale='0.1' />
+		<ModbusInitData ID='89' Addr='89' Name='Кау-2 220_FLAG' Scale='1' />
+		<ModbusInitData ID='90' Addr='90' Name='Последнее задание неплановой P' Scale='1' />
+		<ModbusInitData ID='91' Addr='91' Name='Суммарное ручное задание Р ГЭС' Scale='1' />
+		<ModbusInitData ID='92' Addr='92' Name='Задание плановой P ГЭС' Scale='1' />
+		<ModbusInitData ID='93' Addr='93' Name='Текущее задание внеплановой Р' Scale='1' />
+		<ModbusInitData ID='94' Addr='94' Name='Заданный резерв P ГЭС' Scale='1' />
+		<ModbusInitData ID='95' Addr='95' Name='Фактический резерв P ГЭС' Scale='1' />
+		<ModbusInitData ID='96' Addr='96' Name='Задание P от ПА' Scale='1' />
+		<ModbusInitData ID='97' Addr='97' Name='Задание от регулятора частоты' Scale='1' />
+		<ModbusInitData ID='98' Addr='98' Name='' Scale='1' />
+		<ModbusInitData ID='99' Addr='99' Name='' Scale='1' />
+		<ModbusInitData ID='100' Addr='100' Name='' Scale='1' />
+		<ModbusInitData ID='101' Addr='101' Name='' Scale='1' />
+		<ModbusInitData ID='102' Addr='102' Name='Светлая 220' Scale='1' />
+		<ModbusInitData ID='103' Addr='103' Name='Светлая 220_FLAG' Scale='1' />
+		<ModbusInitData ID='104' Addr='104' Name='Светлая 220' Scale='0.1' />
+		<ModbusInitData ID='105' Addr='105' Name='Светлая 220_FLAG' Scale='1' />
+		<ModbusInitData ID='106' Addr='106' Name='Светлая 220' Scale='0.1' />
+		<ModbusInitData ID='107' Addr='107' Name='Светлая 220_FLAG' Scale='1' />
+		<ModbusInitData ID='108' Addr='108' Name='Коррекция P по F, ген. №1' Scale='1' />
+		<ModbusInitData ID='109' Addr='109' Name='Коррекция P по F, ген. №2' Scale='1' />
+		<ModbusInitData ID='110' Addr='110' Name='Коррекция P по F, ген. №3' Scale='1' />
+		<ModbusInitData ID='111' Addr='111' Name='Коррекция P по F, ген. №4' Scale='1' />
+		<ModbusInitData ID='112' Addr='112' Name='Коррекция P по F, ген. №5' Scale='1' />
+		<ModbusInitData ID='113' Addr='113' Name='Коррекция P по F, ген. №6' Scale='1' />
+		<ModbusInitData ID='114' Addr='114' Name='Коррекция P по F, ген. №7' Scale='1' />
+		<ModbusInitData ID='115' Addr='115' Name='Коррекция P по F, ген. №8' Scale='1' />
+		<ModbusInitData ID='116' Addr='116' Name='Коррекция P по F, ген. №9' Scale='1' />
+		<ModbusInitData ID='117' Addr='117' Name='Коррекция P по F, ген. №10' Scale='1' />
+		<ModbusInitData ID='118' Addr='118' Name='' Scale='1' />
+		<ModbusInitData ID='119' Addr='119' Name='' Scale='1' />
+		<ModbusInitData ID='120' Addr='120' Name='OBB 220' Scale='1' />
+		<ModbusInitData ID='121' Addr='121' Name='OBB 220_FLAG' Scale='1' />
+		<ModbusInitData ID='122' Addr='122' Name='OBB 220' Scale='0.1' />
+		<ModbusInitData ID='123' Addr='123' Name='OBB 220_FLAG' Scale='1' />
+		<ModbusInitData ID='124' Addr='124' Name='OBB 220' Scale='0.1' />
+		<ModbusInitData ID='125' Addr='125' Name='OBB 220_FLAG' Scale='1' />
+		<ModbusInitData ID='126' Addr='126' Name='Коррекция P по F при задании P, ген. №1' Scale='1' />
+		<ModbusInitData ID='127' Addr='127' Name='Коррекция P по F при задании P, ген. №2' Scale='1' />
+		<ModbusInitData ID='128' Addr='128' Name='Коррекция P по F при задании P, ген. №3' Scale='1' />
+		<ModbusInitData ID='129' Addr='129' Name='Коррекция P по F при задании P, ген. №4' Scale='1' />
+		<ModbusInitData ID='130' Addr='130' Name='Коррекция P по F при задании P, ген. №5' Scale='1' />
+		<ModbusInitData ID='131' Addr='131' Name='Коррекция P по F при задании P, ген. №6' Scale='1' />
+		<ModbusInitData ID='132' Addr='132' Name='Коррекция P по F при задании P, ген. №7' Scale='1' />
+		<ModbusInitData ID='133' Addr='133' Name='Коррекция P по F при задании P, ген. №8' Scale='1' />
+		<ModbusInitData ID='134' Addr='134' Name='Коррекция P по F при задании P, ген. №9' Scale='1' />
+		<ModbusInitData ID='135' Addr='135' Name='Коррекция P по F при задании P, ген. №10' Scale='1' />
+		<ModbusInitData ID='136' Addr='136' Name='' Scale='1' />
+		<ModbusInitData ID='137' Addr='137' Name='' Scale='1' />
+		<ModbusInitData ID='138' Addr='138' Name='2AT 220' Scale='1' />
+		<ModbusInitData ID='139' Addr='139' Name='2AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='140' Addr='140' Name='2AT 220' Scale='0.1' />
+		<ModbusInitData ID='141' Addr='141' Name='2AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='142' Addr='142' Name='2AT 220' Scale='0.1' />
+		<ModbusInitData ID='143' Addr='143' Name='2AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='144' Addr='144' Name='Управляющее воздействие на АРВ, ген. №1' Scale='1' />
+		<ModbusInitData ID='145' Addr='145' Name='Управляющее воздействие на АРВ, ген. №2' Scale='1' />
+		<ModbusInitData ID='146' Addr='146' Name='Управляющее воздействие на АРВ, ген. №3' Scale='1' />
+		<ModbusInitData ID='147' Addr='147' Name='Управляющее воздействие на АРВ, ген. №4' Scale='1' />
+		<ModbusInitData ID='148' Addr='148' Name='Управляющее воздействие на АРВ, ген. №5' Scale='1' />
+		<ModbusInitData ID='149' Addr='149' Name='Управляющее воздействие на АРВ, ген. №6' Scale='1' />
+		<ModbusInitData ID='150' Addr='150' Name='Управляющее воздействие на АРВ, ген. №7' Scale='1' />
+		<ModbusInitData ID='151' Addr='151' Name='Управляющее воздействие на АРВ, ген. №8' Scale='1' />
+		<ModbusInitData ID='152' Addr='152' Name='Управляющее воздействие на АРВ, ген. №9' Scale='1' />
+		<ModbusInitData ID='153' Addr='153' Name='Управляющее воздействие на АРВ, ген. №10' Scale='1' />
+		<ModbusInitData ID='154' Addr='154' Name='' Scale='1' />
+		<ModbusInitData ID='155' Addr='155' Name='' Scale='1' />
+		<ModbusInitData ID='156' Addr='156' Name='3AT 220' Scale='1' />
+		<ModbusInitData ID='157' Addr='157' Name='3AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='158' Addr='158' Name='3AT 220' Scale='0.1' />
+		<ModbusInitData ID='159' Addr='159' Name='3AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='160' Addr='160' Name='3AT 220' Scale='0.1' />
+		<ModbusInitData ID='161' Addr='161' Name='3AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='162' Addr='162' Name='Коэффициент рапределения для ген. №1' Scale='1' />
+		<ModbusInitData ID='163' Addr='163' Name='Коэффициент рапределения для ген. №2' Scale='1' />
+		<ModbusInitData ID='164' Addr='164' Name='Коэффициент рапределения для ген. №3' Scale='1' />
+		<ModbusInitData ID='165' Addr='165' Name='Коэффициент рапределения для ген. №4' Scale='1' />
+		<ModbusInitData ID='166' Addr='166' Name='Коэффициент рапределения для ген. №5' Scale='1' />
+		<ModbusInitData ID='167' Addr='167' Name='Коэффициент рапределения для ген. №6' Scale='1' />
+		<ModbusInitData ID='168' Addr='168' Name='Коэффициент рапределения для ген. №7' Scale='1' />
+		<ModbusInitData ID='169' Addr='169' Name='Коэффициент рапределения для ген. №8' Scale='1' />
+		<ModbusInitData ID='170' Addr='170' Name='Коэффициент рапределения для ген. №9' Scale='1' />
+		<ModbusInitData ID='171' Addr='171' Name='Коэффициент рапределения для ген. №10' Scale='1' />
+		<ModbusInitData ID='172' Addr='172' Name='' Scale='1' />
+		<ModbusInitData ID='173' Addr='173' Name='' Scale='1' />
+		<ModbusInitData ID='174' Addr='174' Name='4T 220' Scale='1' />
+		<ModbusInitData ID='175' Addr='175' Name='4T 220_FLAG' Scale='1' />
+		<ModbusInitData ID='176' Addr='176' Name='4T 220' Scale='0.1' />
+		<ModbusInitData ID='177' Addr='177' Name='4T 220_FLAG' Scale='1' />
+		<ModbusInitData ID='178' Addr='178' Name='4T 220' Scale='0.1' />
+		<ModbusInitData ID='179' Addr='179' Name='4T 220_FLAG' Scale='1' />
+		<ModbusInitData ID='180' Addr='180' Name='U110 Текущее фактическое' Scale='1' />
+		<ModbusInitData ID='181' Addr='181' Name='U110 Заданное графиком' Scale='1' />
+		<ModbusInitData ID='182' Addr='182' Name='U110 Заданная коррекция графика' Scale='1' />
+		<ModbusInitData ID='183' Addr='183' Name='U110 Суммарное задание' Scale='1' />
+		<ModbusInitData ID='184' Addr='184' Name='U110 Максимально допустимое' Scale='1' />
+		<ModbusInitData ID='185' Addr='185' Name='U110 Минимально допустимое' Scale='1' />
+		<ModbusInitData ID='186' Addr='186' Name='U220 Текущее фактическое' Scale='1' />
+		<ModbusInitData ID='187' Addr='187' Name='U220 Заданное графиком' Scale='1' />
+		<ModbusInitData ID='188' Addr='188' Name='U220 Заданная коррекция графика' Scale='1' />
+		<ModbusInitData ID='189' Addr='189' Name='U220 Суммарное задание' Scale='1' />
+		<ModbusInitData ID='190' Addr='190' Name='' Scale='1' />
+		<ModbusInitData ID='191' Addr='191' Name='' Scale='1' />
+		<ModbusInitData ID='192' Addr='192' Name='5,6 AT 220' Scale='1' />
+		<ModbusInitData ID='193' Addr='193' Name='5,6 AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='194' Addr='194' Name='5,6 AT 220' Scale='0.1' />
+		<ModbusInitData ID='195' Addr='195' Name='5,6 AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='196' Addr='196' Name='5,6 AT 220' Scale='0.1' />
+		<ModbusInitData ID='197' Addr='197' Name='5,6 AT 220_FLAG' Scale='1' />
+		<ModbusInitData ID='198' Addr='198' Name='U220 Максимально допустимое' Scale='1' />
+		<ModbusInitData ID='199' Addr='199' Name='U220 Минимально допустимое' Scale='1' />
+		<ModbusInitData ID='200' Addr='200' Name='U500 Текущее' Scale='1' />
+		<ModbusInitData ID='201' Addr='201' Name='U13,8 Минимально допустимое' Scale='1' />
+		<ModbusInitData ID='202' Addr='202' Name='U500 Оптимально максимальное' Scale='1' />
+		<ModbusInitData ID='203' Addr='203' Name='U500 Оптимально минимальное' Scale='1' />
+		<ModbusInitData ID='204' Addr='204' Name='U500 Максимально допустимое' Scale='1' />
+		<ModbusInitData ID='205' Addr='205' Name='U500 Минимально допустимое' Scale='1' />
+		<ModbusInitData ID='206' Addr='206' Name='' Scale='1' />
+		<ModbusInitData ID='207' Addr='207' Name='' Scale='1' />
+		<ModbusInitData ID='208' Addr='208' Name='Расход' Scale='1' />
+		<ModbusInitData ID='209' Addr='209' Name='Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='210' Addr='210' Name='Ток ротора' Scale='1' />
+		<ModbusInitData ID='211' Addr='211' Name='Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='212' Addr='212' Name='Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='213' Addr='213' Name='Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='214' Addr='214' Name='Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='215' Addr='215' Name='Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='216' Addr='216' Name='Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='217' Addr='217' Name='Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='218' Addr='218' Name='Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='219' Addr='219' Name='Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='220' Addr='220' Name='Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='221' Addr='221' Name='Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='222' Addr='222' Name='Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='223' Addr='223' Name='Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='224' Addr='224' Name='Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='225' Addr='225' Name='Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='226' Addr='226' Name='Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='227' Addr='227' Name='Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='228' Addr='228' Name='Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='229' Addr='229' Name='Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='230' Addr='230' Name='Контроль напора (см)' Scale='1' />
+		<ModbusInitData ID='231' Addr='231' Name='Контроль напора (см)_FLAG' Scale='1' />
+		<ModbusInitData ID='232' Addr='232' Name='Текущий расход (м3/сек)' Scale='1' />
+		<ModbusInitData ID='233' Addr='233' Name='Текущий расход (м3/сек)_FLAG' Scale='1' />
+		<ModbusInitData ID='234' Addr='234' Name='Частота (0,01 Гц)' Scale='1' />
+		<ModbusInitData ID='235' Addr='235' Name='Частота (0,01 Гц)_FLAG' Scale='1' />
+		<ModbusInitData ID='236' Addr='236' Name='' Scale='1' />
+		<ModbusInitData ID='237' Addr='237' Name='_FLAG' Scale='1' />
+		<ModbusInitData ID='238' Addr='238' Name='' Scale='1' />
+		<ModbusInitData ID='239' Addr='239' Name='_FLAG' Scale='1' />
+		<ModbusInitData ID='240' Addr='240' Name='' Scale='1' />
+		<ModbusInitData ID='241' Addr='241' Name='_FLAG' Scale='1' />
+		<ModbusInitData ID='242' Addr='242' Name='' Scale='1' />
+		<ModbusInitData ID='243' Addr='243' Name='_FLAG' Scale='1' />
+		<ModbusInitData ID='244' Addr='244' Name='' Scale='1' />
+		<ModbusInitData ID='245' Addr='245' Name='_FLAG' Scale='1' />
+		<ModbusInitData ID='246' Addr='246' Name='' Scale='1' />
+		<ModbusInitData ID='247' Addr='247' Name='' Scale='1' />
+		<ModbusInitData ID='248' Addr='248' Name='Статизм по частоте' Scale='1' />
+		<ModbusInitData ID='249' Addr='249' Name='Уставка по частоте' Scale='1' />
+		<ModbusInitData ID='250' Addr='250' Name='Зона нечувствительности по частоте' Scale='1' />
+		<ModbusInitData ID='251' Addr='251' Name='Код режима (0,1,2 бит)' Scale='1' />
+		<ModbusInitData ID='252' Addr='252' Name='Зона нечувствительности работы ЗВН' Scale='1' />
+		<ModbusInitData ID='253' Addr='253' Name='Коррекция данных от УТК' Scale='1' />
+		<ModbusInitData ID='254' Addr='254' Name='Постоянная времени интегратора' Scale='1' />
+		<ModbusInitData ID='255' Addr='255' Name='Маска управления от М6000' Scale='1' />
+		<ModbusInitData ID='256' Addr='256' Name='Минимальный уровень НБ' Scale='1' />
+		<ModbusInitData ID='257' Addr='257' Name='' Scale='1' />
+		<ModbusInitData ID='258' Addr='258' Name='Г2 Расход' Scale='1' />
+		<ModbusInitData ID='259' Addr='259' Name='Г2 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='260' Addr='260' Name='Г2 Ток ротора' Scale='1' />
+		<ModbusInitData ID='261' Addr='261' Name='Г2 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='262' Addr='262' Name='Г2 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='263' Addr='263' Name='Г2 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='264' Addr='264' Name='Г2 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='265' Addr='265' Name='Г2 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='266' Addr='266' Name='Г2 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='267' Addr='267' Name='Г2 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='268' Addr='268' Name='Г2 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='269' Addr='269' Name='Г2 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='270' Addr='270' Name='Г2 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='271' Addr='271' Name='Г2 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='272' Addr='272' Name='Г2 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='273' Addr='273' Name='Г2 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='274' Addr='274' Name='Г2 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='275' Addr='275' Name='Г2 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='276' Addr='276' Name='Г2 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='277' Addr='277' Name='Г2 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='278' Addr='278' Name='Г2 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='279' Addr='279' Name='Г2 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='280' Addr='280' Name='Г2 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='281' Addr='281' Name='Г2 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='282' Addr='282' Name='Г2 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='283' Addr='283' Name='Г2 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='284' Addr='284' Name='Г2 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='285' Addr='285' Name='Г2 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='286' Addr='286' Name='Г2 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='287' Addr='287' Name='Г2 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='288' Addr='288' Name='Г2 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='289' Addr='289' Name='Г2 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='290' Addr='290' Name='Г2 Частота' Scale='1' />
+		<ModbusInitData ID='291' Addr='291' Name='Г2 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='292' Addr='292' Name='Г2 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='293' Addr='293' Name='Г2 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='294' Addr='294' Name='Г2 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='295' Addr='295' Name='Г2 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='296' Addr='296' Name='' Scale='1' />
+		<ModbusInitData ID='297' Addr='297' Name='' Scale='1' />
+		<ModbusInitData ID='298' Addr='298' Name='Режимное ограничение по P генератора №1 ' Scale='1' />
+		<ModbusInitData ID='299' Addr='299' Name='Режимное ограничение по P генератора №2' Scale='1' />
+		<ModbusInitData ID='300' Addr='300' Name='Режимное ограничение по P генератора №3' Scale='1' />
+		<ModbusInitData ID='301' Addr='301' Name='Режимное ограничение по P генератора №4' Scale='1' />
+		<ModbusInitData ID='302' Addr='302' Name='Режимное ограничение по P генератора №5' Scale='1' />
+		<ModbusInitData ID='303' Addr='303' Name='Режимное ограничение по P генератора №6' Scale='1' />
+		<ModbusInitData ID='304' Addr='304' Name='Режимное ограничение по P генератора №7' Scale='1' />
+		<ModbusInitData ID='305' Addr='305' Name='Режимное ограничение по P генератора №8' Scale='1' />
+		<ModbusInitData ID='306' Addr='306' Name='Режимное ограничение по P генератора №9' Scale='1' />
+		<ModbusInitData ID='307' Addr='307' Name='Режимное ограничение по P генератора №10' Scale='1' />
+		<ModbusInitData ID='308' Addr='308' Name='Г3 Расход' Scale='1' />
+		<ModbusInitData ID='309' Addr='309' Name='Г3 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='310' Addr='310' Name='Г3 Ток ротора' Scale='1' />
+		<ModbusInitData ID='311' Addr='311' Name='Г3 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='312' Addr='312' Name='Г3 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='313' Addr='313' Name='Г3 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='314' Addr='314' Name='Г3 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='315' Addr='315' Name='Г3 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='316' Addr='316' Name='Г3 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='317' Addr='317' Name='Г3 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='318' Addr='318' Name='Г3 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='319' Addr='319' Name='Г3 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='320' Addr='320' Name='Г3 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='321' Addr='321' Name='Г3 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='322' Addr='322' Name='Г3 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='323' Addr='323' Name='Г3 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='324' Addr='324' Name='Г3 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='325' Addr='325' Name='Г3 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='326' Addr='326' Name='Г3 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='327' Addr='327' Name='Г3 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='328' Addr='328' Name='Г3 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='329' Addr='329' Name='Г3 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='330' Addr='330' Name='Г3 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='331' Addr='331' Name='Г3 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='332' Addr='332' Name='Г3 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='333' Addr='333' Name='Г3 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='334' Addr='334' Name='Г3 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='335' Addr='335' Name='Г3 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='336' Addr='336' Name='Г3 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='337' Addr='337' Name='Г3 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='338' Addr='338' Name='Г3 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='339' Addr='339' Name='Г3 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='340' Addr='340' Name='Г3 Частота' Scale='1' />
+		<ModbusInitData ID='341' Addr='341' Name='Г3 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='342' Addr='342' Name='Г3 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='343' Addr='343' Name='Г3 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='344' Addr='344' Name='Г3 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='345' Addr='345' Name='Г3 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='346' Addr='346' Name='' Scale='1' />
+		<ModbusInitData ID='347' Addr='347' Name='' Scale='1' />
+		<ModbusInitData ID='348' Addr='348' Name='Технологическое ограничение P ген. №1' Scale='1' />
+		<ModbusInitData ID='349' Addr='349' Name='Технологическое ограничение P ген. №2' Scale='1' />
+		<ModbusInitData ID='350' Addr='350' Name='Технологическое ограничение P ген. №3' Scale='1' />
+		<ModbusInitData ID='351' Addr='351' Name='Технологическое ограничение P ген. №4' Scale='1' />
+		<ModbusInitData ID='352' Addr='352' Name='Технологическое ограничение P ген. №5' Scale='1' />
+		<ModbusInitData ID='353' Addr='353' Name='Технологическое ограничение P ген. №6' Scale='1' />
+		<ModbusInitData ID='354' Addr='354' Name='Технологическое ограничение P ген. №7' Scale='1' />
+		<ModbusInitData ID='355' Addr='355' Name='Технологическое ограничение P ген. №8' Scale='1' />
+		<ModbusInitData ID='356' Addr='356' Name='Технологическое ограничение P ген. №9' Scale='1' />
+		<ModbusInitData ID='357' Addr='357' Name='Технологическое ограничение P ген. №10' Scale='1' />
+		<ModbusInitData ID='358' Addr='358' Name='Г4 Расход' Scale='1' />
+		<ModbusInitData ID='359' Addr='359' Name='Г4 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='360' Addr='360' Name='Г4 Ток ротора' Scale='1' />
+		<ModbusInitData ID='361' Addr='361' Name='Г4 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='362' Addr='362' Name='Г4 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='363' Addr='363' Name='Г4 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='364' Addr='364' Name='Г4 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='365' Addr='365' Name='Г4 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='366' Addr='366' Name='Г4 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='367' Addr='367' Name='Г4 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='368' Addr='368' Name='Г4 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='369' Addr='369' Name='Г4 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='370' Addr='370' Name='Г4 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='371' Addr='371' Name='Г4 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='372' Addr='372' Name='Г4 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='373' Addr='373' Name='Г4 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='374' Addr='374' Name='Г4 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='375' Addr='375' Name='Г4 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='376' Addr='376' Name='Г4 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='377' Addr='377' Name='Г4 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='378' Addr='378' Name='Г4 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='379' Addr='379' Name='Г4 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='380' Addr='380' Name='Г4 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='381' Addr='381' Name='Г4 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='382' Addr='382' Name='Г4 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='383' Addr='383' Name='Г4 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='384' Addr='384' Name='Г4 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='385' Addr='385' Name='Г4 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='386' Addr='386' Name='Г4 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='387' Addr='387' Name='Г4 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='388' Addr='388' Name='Г4 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='389' Addr='389' Name='Г4 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='390' Addr='390' Name='Г4 Частота' Scale='1' />
+		<ModbusInitData ID='391' Addr='391' Name='Г4 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='392' Addr='392' Name='Г4 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='393' Addr='393' Name='Г4 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='394' Addr='394' Name='Г4 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='395' Addr='395' Name='Г4 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='396' Addr='396' Name='' Scale='1' />
+		<ModbusInitData ID='397' Addr='397' Name='' Scale='1' />
+		<ModbusInitData ID='398' Addr='398' Name='Акк. Б #1' Scale='1' />
+		<ModbusInitData ID='399' Addr='399' Name='Акк. Б #1_FLAG' Scale='1' />
+		<ModbusInitData ID='400' Addr='400' Name='Акк. Б #2' Scale='1' />
+		<ModbusInitData ID='401' Addr='401' Name='Акк. Б #2_FLAG' Scale='1' />
+		<ModbusInitData ID='402' Addr='402' Name='Акк. Б #3' Scale='1' />
+		<ModbusInitData ID='403' Addr='403' Name='Акк. Б #3_FLAG' Scale='1' />
+		<ModbusInitData ID='404' Addr='404' Name='Акк. Б #4' Scale='1' />
+		<ModbusInitData ID='405' Addr='405' Name='Акк. Б #4_FLAG' Scale='1' />
+		<ModbusInitData ID='406' Addr='406' Name='' Scale='1' />
+		<ModbusInitData ID='407' Addr='407' Name='' Scale='1' />
+		<ModbusInitData ID='408' Addr='408' Name='Г5 Расход' Scale='1' />
+		<ModbusInitData ID='409' Addr='409' Name='Г5 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='410' Addr='410' Name='Г5 Ток ротора' Scale='1' />
+		<ModbusInitData ID='411' Addr='411' Name='Г5 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='412' Addr='412' Name='Г5 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='413' Addr='413' Name='Г5 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='414' Addr='414' Name='Г5 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='415' Addr='415' Name='Г5 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='416' Addr='416' Name='Г5 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='417' Addr='417' Name='Г5 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='418' Addr='418' Name='Г5 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='419' Addr='419' Name='Г5 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='420' Addr='420' Name='Г5 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='421' Addr='421' Name='Г5 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='422' Addr='422' Name='Г5 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='423' Addr='423' Name='Г5 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='424' Addr='424' Name='Г5 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='425' Addr='425' Name='Г5 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='426' Addr='426' Name='Г5 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='427' Addr='427' Name='Г5 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='428' Addr='428' Name='Г5 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='429' Addr='429' Name='Г5 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='430' Addr='430' Name='Г5 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='431' Addr='431' Name='Г5 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='432' Addr='432' Name='Г5 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='433' Addr='433' Name='Г5 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='434' Addr='434' Name='Г5 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='435' Addr='435' Name='Г5 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='436' Addr='436' Name='Г5 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='437' Addr='437' Name='Г5 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='438' Addr='438' Name='Г5 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='439' Addr='439' Name='Г5 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='440' Addr='440' Name='Г5 Частота' Scale='1' />
+		<ModbusInitData ID='441' Addr='441' Name='Г5 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='442' Addr='442' Name='Г5 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='443' Addr='443' Name='Г5 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='444' Addr='444' Name='Г5 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='445' Addr='445' Name='Г5 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='446' Addr='446' Name='' Scale='1' />
+		<ModbusInitData ID='447' Addr='447' Name='' Scale='1' />
+		<ModbusInitData ID='448' Addr='448' Name='Коэффициент запаса УЭР на +, ген. №1' Scale='1' />
+		<ModbusInitData ID='449' Addr='449' Name='Коэффициент запаса УЭР на +, ген. №2' Scale='1' />
+		<ModbusInitData ID='450' Addr='450' Name='Коэффициент запаса УЭР на +, ген. №3' Scale='1' />
+		<ModbusInitData ID='451' Addr='451' Name='Коэффициент запаса УЭР на +, ген. №4' Scale='1' />
+		<ModbusInitData ID='452' Addr='452' Name='Коэффициент запаса УЭР на +, ген. №5' Scale='1' />
+		<ModbusInitData ID='453' Addr='453' Name='Коэффициент запаса УЭР на +, ген. №6' Scale='1' />
+		<ModbusInitData ID='454' Addr='454' Name='Коэффициент запаса УЭР на +, ген. №7' Scale='1' />
+		<ModbusInitData ID='455' Addr='455' Name='Коэффициент запаса УЭР на +, ген. №8' Scale='1' />
+		<ModbusInitData ID='456' Addr='456' Name='Коэффициент запаса УЭР на +, ген. №9' Scale='1' />
+		<ModbusInitData ID='457' Addr='457' Name='Коэффициент запаса УЭР на +, ген. №10' Scale='1' />
+		<ModbusInitData ID='458' Addr='458' Name='Г6 Расход' Scale='1' />
+		<ModbusInitData ID='459' Addr='459' Name='Г6 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='460' Addr='460' Name='Г6 Ток ротора' Scale='1' />
+		<ModbusInitData ID='461' Addr='461' Name='Г6 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='462' Addr='462' Name='Г6 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='463' Addr='463' Name='Г6 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='464' Addr='464' Name='Г6 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='465' Addr='465' Name='Г6 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='466' Addr='466' Name='Г6 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='467' Addr='467' Name='Г6 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='468' Addr='468' Name='Г6 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='469' Addr='469' Name='Г6 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='470' Addr='470' Name='Г6 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='471' Addr='471' Name='Г6 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='472' Addr='472' Name='Г6 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='473' Addr='473' Name='Г6 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='474' Addr='474' Name='Г6 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='475' Addr='475' Name='Г6 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='476' Addr='476' Name='Г6 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='477' Addr='477' Name='Г6 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='478' Addr='478' Name='Г6 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='479' Addr='479' Name='Г6 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='480' Addr='480' Name='Г6 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='481' Addr='481' Name='Г6 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='482' Addr='482' Name='Г6 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='483' Addr='483' Name='Г6 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='484' Addr='484' Name='Г6 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='485' Addr='485' Name='Г6 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='486' Addr='486' Name='Г6 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='487' Addr='487' Name='Г6 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='488' Addr='488' Name='Г6 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='489' Addr='489' Name='Г6 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='490' Addr='490' Name='Г6 Частота' Scale='1' />
+		<ModbusInitData ID='491' Addr='491' Name='Г6 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='492' Addr='492' Name='Г6 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='493' Addr='493' Name='Г6 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='494' Addr='494' Name='Г6 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='495' Addr='495' Name='Г6 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='496' Addr='496' Name='' Scale='1' />
+		<ModbusInitData ID='497' Addr='497' Name='' Scale='1' />
+		<ModbusInitData ID='498' Addr='498' Name='Коэффициент запаса УЭР на -, ген. №1' Scale='1' />
+		<ModbusInitData ID='499' Addr='499' Name='Коэффициент запаса УЭР на -, ген. №2' Scale='1' />
+		<ModbusInitData ID='500' Addr='500' Name='Коэффициент запаса УЭР на -, ген. №3' Scale='1' />
+		<ModbusInitData ID='501' Addr='501' Name='Коэффициент запаса УЭР на -, ген. №4' Scale='1' />
+		<ModbusInitData ID='502' Addr='502' Name='Коэффициент запаса УЭР на -, ген. №5' Scale='1' />
+		<ModbusInitData ID='503' Addr='503' Name='Коэффициент запаса УЭР на -, ген. №6' Scale='1' />
+		<ModbusInitData ID='504' Addr='504' Name='Коэффициент запаса УЭР на -, ген. №7' Scale='1' />
+		<ModbusInitData ID='505' Addr='505' Name='Коэффициент запаса УЭР на -, ген. №8' Scale='1' />
+		<ModbusInitData ID='506' Addr='506' Name='Коэффициент запаса УЭР на -, ген. №9' Scale='1' />
+		<ModbusInitData ID='507' Addr='507' Name='Коэффициент запаса УЭР на -, ген. №10' Scale='1' />
+		<ModbusInitData ID='508' Addr='508' Name='Г7 Расход' Scale='1' />
+		<ModbusInitData ID='509' Addr='509' Name='Г7 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='510' Addr='510' Name='Г7 Ток ротора' Scale='1' />
+		<ModbusInitData ID='511' Addr='511' Name='Г7 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='512' Addr='512' Name='Г7 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='513' Addr='513' Name='Г7 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='514' Addr='514' Name='Г7 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='515' Addr='515' Name='Г7 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='516' Addr='516' Name='Г7 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='517' Addr='517' Name='Г7 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='518' Addr='518' Name='Г7 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='519' Addr='519' Name='Г7 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='520' Addr='520' Name='Г7 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='521' Addr='521' Name='Г7 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='522' Addr='522' Name='Г7 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='523' Addr='523' Name='Г7 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='524' Addr='524' Name='Г7 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='525' Addr='525' Name='Г7 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='526' Addr='526' Name='Г7 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='527' Addr='527' Name='Г7 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='528' Addr='528' Name='Г7 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='529' Addr='529' Name='Г7 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='530' Addr='530' Name='Г7 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='531' Addr='531' Name='Г7 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='532' Addr='532' Name='Г7 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='533' Addr='533' Name='Г7 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='534' Addr='534' Name='Г7 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='535' Addr='535' Name='Г7 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='536' Addr='536' Name='Г7 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='537' Addr='537' Name='Г7 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='538' Addr='538' Name='Г7 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='539' Addr='539' Name='Г7 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='540' Addr='540' Name='Г7 Частота' Scale='1' />
+		<ModbusInitData ID='541' Addr='541' Name='Г7 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='542' Addr='542' Name='Г7 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='543' Addr='543' Name='Г7 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='544' Addr='544' Name='Г7 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='545' Addr='545' Name='Г7 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='546' Addr='546' Name='' Scale='1' />
+		<ModbusInitData ID='547' Addr='547' Name='' Scale='1' />
+		<ModbusInitData ID='548' Addr='548' Name='Верхний бьеф сгл.' Scale='1' />
+		<ModbusInitData ID='549' Addr='549' Name='Верхний бьеф сгл._FLAG' Scale='1' />
+		<ModbusInitData ID='550' Addr='550' Name='Нижний бьеф сгл.' Scale='1' />
+		<ModbusInitData ID='551' Addr='551' Name='Нижний бьеф сгл._FLAG' Scale='1' />
+		<ModbusInitData ID='552' Addr='552' Name='Напор сглаженный' Scale='1' />
+		<ModbusInitData ID='553' Addr='553' Name='Напор сглаженный_FLAG' Scale='1' />
+		<ModbusInitData ID='554' Addr='554' Name='' Scale='1' />
+		<ModbusInitData ID='555' Addr='555' Name='' Scale='1' />
+		<ModbusInitData ID='556' Addr='556' Name='' Scale='1' />
+		<ModbusInitData ID='557' Addr='557' Name='' Scale='1' />
+		<ModbusInitData ID='558' Addr='558' Name='' Scale='1' />
+		<ModbusInitData ID='559' Addr='559' Name='' Scale='1' />
+		<ModbusInitData ID='560' Addr='560' Name='Г8 Ток ротора' Scale='1' />
+		<ModbusInitData ID='561' Addr='561' Name='Г8 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='562' Addr='562' Name='Г8 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='563' Addr='563' Name='Г8 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='564' Addr='564' Name='Г8 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='565' Addr='565' Name='Г8 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='566' Addr='566' Name='Г8 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='567' Addr='567' Name='Г8 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='568' Addr='568' Name='Г8 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='569' Addr='569' Name='Г8 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='570' Addr='570' Name='Г8 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='571' Addr='571' Name='Г8 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='572' Addr='572' Name='Г8 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='573' Addr='573' Name='Г8 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='574' Addr='574' Name='Г8 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='575' Addr='575' Name='Г8 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='576' Addr='576' Name='Г8 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='577' Addr='577' Name='Г8 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='578' Addr='578' Name='Г8 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='579' Addr='579' Name='Г8 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='580' Addr='580' Name='Г8 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='581' Addr='581' Name='Г8 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='582' Addr='582' Name='Г8 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='583' Addr='583' Name='Г8 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='584' Addr='584' Name='Г8 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='585' Addr='585' Name='Г8 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='586' Addr='586' Name='Г8 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='587' Addr='587' Name='Г8 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='588' Addr='588' Name='Г8 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='589' Addr='589' Name='Г8 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='590' Addr='590' Name='Г8 Частота' Scale='1' />
+		<ModbusInitData ID='591' Addr='591' Name='Г8 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='592' Addr='592' Name='Г8 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='593' Addr='593' Name='Г8 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='594' Addr='594' Name='Г8 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='595' Addr='595' Name='Г8 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='596' Addr='596' Name='' Scale='1' />
+		<ModbusInitData ID='597' Addr='597' Name='' Scale='1' />
+		<ModbusInitData ID='598' Addr='598' Name='' Scale='1' />
+		<ModbusInitData ID='599' Addr='599' Name='' Scale='1' />
+		<ModbusInitData ID='600' Addr='600' Name='' Scale='1' />
+		<ModbusInitData ID='601' Addr='601' Name='' Scale='1' />
+		<ModbusInitData ID='602' Addr='602' Name='' Scale='1' />
+		<ModbusInitData ID='603' Addr='603' Name='' Scale='1' />
+		<ModbusInitData ID='604' Addr='604' Name='' Scale='1' />
+		<ModbusInitData ID='605' Addr='605' Name='' Scale='1' />
+		<ModbusInitData ID='606' Addr='606' Name='' Scale='1' />
+		<ModbusInitData ID='607' Addr='607' Name='' Scale='1' />
+		<ModbusInitData ID='608' Addr='608' Name='Г9 Расход' Scale='1' />
+		<ModbusInitData ID='609' Addr='609' Name='Г9 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='610' Addr='610' Name='Г9 Ток ротора' Scale='1' />
+		<ModbusInitData ID='611' Addr='611' Name='Г9 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='612' Addr='612' Name='Г9 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='613' Addr='613' Name='Г9 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='614' Addr='614' Name='Г9 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='615' Addr='615' Name='Г9 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='616' Addr='616' Name='Г9 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='617' Addr='617' Name='Г9 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='618' Addr='618' Name='Г9 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='619' Addr='619' Name='Г9 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='620' Addr='620' Name='Г9 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='621' Addr='621' Name='Г9 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='622' Addr='622' Name='Г9 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='623' Addr='623' Name='Г9 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='624' Addr='624' Name='Г9 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='625' Addr='625' Name='Г9 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='626' Addr='626' Name='Г9 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='627' Addr='627' Name='Г9 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='628' Addr='628' Name='Г9 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='629' Addr='629' Name='Г9 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='630' Addr='630' Name='Г9 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='631' Addr='631' Name='Г9 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='632' Addr='632' Name='Г9 Генераторный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='633' Addr='633' Name='Г9 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='634' Addr='634' Name='Г9 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='635' Addr='635' Name='Г9 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='636' Addr='636' Name='Г9 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='637' Addr='637' Name='Г9 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='638' Addr='638' Name='Г9 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='639' Addr='639' Name='Г9 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='640' Addr='640' Name='Г9 Частота' Scale='1' />
+		<ModbusInitData ID='641' Addr='641' Name='Г9 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='642' Addr='642' Name='Г9 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='643' Addr='643' Name='Г9 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='644' Addr='644' Name='Г9 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='645' Addr='645' Name='Г9 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='646' Addr='646' Name='' Scale='1' />
+		<ModbusInitData ID='647' Addr='647' Name='' Scale='1' />
+		<ModbusInitData ID='648' Addr='648' Name='' Scale='1' />
+		<ModbusInitData ID='649' Addr='649' Name='' Scale='1' />
+		<ModbusInitData ID='650' Addr='650' Name='' Scale='1' />
+		<ModbusInitData ID='651' Addr='651' Name='' Scale='1' />
+		<ModbusInitData ID='652' Addr='652' Name='' Scale='1' />
+		<ModbusInitData ID='653' Addr='653' Name='' Scale='1' />
+		<ModbusInitData ID='654' Addr='654' Name='' Scale='1' />
+		<ModbusInitData ID='655' Addr='655' Name='' Scale='1' />
+		<ModbusInitData ID='656' Addr='656' Name='' Scale='1' />
+		<ModbusInitData ID='657' Addr='657' Name='' Scale='1' />
+		<ModbusInitData ID='658' Addr='658' Name='Г10 Расход' Scale='1' />
+		<ModbusInitData ID='659' Addr='659' Name='Г10 Расход_FLAG' Scale='1' />
+		<ModbusInitData ID='660' Addr='660' Name='Г10 Ток ротора' Scale='1' />
+		<ModbusInitData ID='661' Addr='661' Name='Г10 Ток ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='662' Addr='662' Name='Г10 Напряжение ротора' Scale='1' />
+		<ModbusInitData ID='663' Addr='663' Name='Г10 Напряжение ротора_FLAG' Scale='1' />
+		<ModbusInitData ID='664' Addr='664' Name='Г10 Напряжение статора' Scale='0.01' />
+		<ModbusInitData ID='665' Addr='665' Name='Г10 Напряжение статора_FLAG' Scale='1' />
+		<ModbusInitData ID='666' Addr='666' Name='Г10 Активная мощность' Scale='0.1' />
+		<ModbusInitData ID='667' Addr='667' Name='Г10 Активная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='668' Addr='668' Name='Г10 Реактивная мощность' Scale='0.1' />
+		<ModbusInitData ID='669' Addr='669' Name='Г10 Реактивная мощность_FLAG' Scale='1' />
+		<ModbusInitData ID='670' Addr='670' Name='Г10 Ток статора, фаза А' Scale='1' />
+		<ModbusInitData ID='671' Addr='671' Name='Г10 Ток статора, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='672' Addr='672' Name='Г10 Ток статора, фаза В' Scale='1' />
+		<ModbusInitData ID='673' Addr='673' Name='Г10 Ток статора, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='674' Addr='674' Name='Г10 Ток статора, фаза С' Scale='1' />
+		<ModbusInitData ID='675' Addr='675' Name='Г10 Ток статора, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='676' Addr='676' Name='Г10 Открытие НА' Scale='0.1' />
+		<ModbusInitData ID='677' Addr='677' Name='Г10 Открытие НА_FLAG' Scale='1' />
+		<ModbusInitData ID='678' Addr='678' Name='Г10 Разворот лопастей' Scale='0.1' />
+		<ModbusInitData ID='679' Addr='679' Name='Г10 Разворот лопастей_FLAG' Scale='1' />
+		<ModbusInitData ID='680' Addr='680' Name='Г10 Контроль задания напора' Scale='0.01' />
+		<ModbusInitData ID='681' Addr='681' Name='Г10 Контроль задания напора_FLAG' Scale='1' />
+		<ModbusInitData ID='682' Addr='682' Name='Г10 Генераторный подшипник радиально' Scale='0.01' />
+		<ModbusInitData ID='683' Addr='683' Name='Г10 Генераторный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='684' Addr='684' Name='Г10 Турбинный подшипник радиально' Scale='1' />
+		<ModbusInitData ID='685' Addr='685' Name='Г10 Турбинный подшипник радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='686' Addr='686' Name='Г10 Крышка турбины' Scale='1' />
+		<ModbusInitData ID='687' Addr='687' Name='Г10 Крышка турбины_FLAG' Scale='1' />
+		<ModbusInitData ID='688' Addr='688' Name='Г10 Подпятник вертикально' Scale='1' />
+		<ModbusInitData ID='689' Addr='689' Name='Г10 Подпятник вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='690' Addr='690' Name='Г10 Частота' Scale='0.01' />
+		<ModbusInitData ID='691' Addr='691' Name='Г10 Частота_FLAG' Scale='1' />
+		<ModbusInitData ID='692' Addr='692' Name='Г10 Спинка статора вертикально' Scale='1' />
+		<ModbusInitData ID='693' Addr='693' Name='Г10 Спинка статора вертикально_FLAG' Scale='1' />
+		<ModbusInitData ID='694' Addr='694' Name='Г10 Спинка статора радиально' Scale='1' />
+		<ModbusInitData ID='695' Addr='695' Name='Г10 Спинка статора радиально_FLAG' Scale='1' />
+		<ModbusInitData ID='696' Addr='696' Name='' Scale='1' />
+		<ModbusInitData ID='697' Addr='697' Name='' Scale='1' />
+		<ModbusInitData ID='698' Addr='698' Name='' Scale='1' />
+		<ModbusInitData ID='699' Addr='699' Name='' Scale='1' />
+		<ModbusInitData ID='700' Addr='700' Name='' Scale='1' />
+		<ModbusInitData ID='701' Addr='701' Name='' Scale='1' />
+		<ModbusInitData ID='702' Addr='702' Name='' Scale='1' />
+		<ModbusInitData ID='703' Addr='703' Name='' Scale='1' />
+		<ModbusInitData ID='704' Addr='704' Name='' Scale='1' />
+		<ModbusInitData ID='705' Addr='705' Name='' Scale='1' />
+		<ModbusInitData ID='706' Addr='706' Name='' Scale='1' />
+		<ModbusInitData ID='707' Addr='707' Name='' Scale='1' />
+		<ModbusInitData ID='708' Addr='708' Name='Расход воды (Q) ГЭС' Scale='1' />
+		<ModbusInitData ID='709' Addr='709' Name='Расход воды (Q) ГЭС_FLAG' Scale='1' />
+		<ModbusInitData ID='710' Addr='710' Name='Уровень верхнего бьефа 1' Scale='0.01' />
+		<ModbusInitData ID='711' Addr='711' Name='Уровень верхнего бьефа 1_FLAG' Scale='1' />
+		<ModbusInitData ID='712' Addr='712' Name='Уровень нижнего бьефа 1' Scale='0.01' />
+		<ModbusInitData ID='713' Addr='713' Name='Уровень нижнего бьефа 1_FLAG' Scale='1' />
+		<ModbusInitData ID='714' Addr='714' Name='Уровень верхнего бьефа 2' Scale='0.01' />
+		<ModbusInitData ID='715' Addr='715' Name='Уровень верхнего бьефа 2_FLAG' Scale='1' />
+		<ModbusInitData ID='716' Addr='716' Name='Уровень нижнего бьефа 2' Scale='0.01' />
+		<ModbusInitData ID='717' Addr='717' Name='Уровень нижнего бьефа 2_FLAG' Scale='1' />
+		<ModbusInitData ID='718' Addr='718' Name='Задание неплановой мощности от УТК' Scale='1' />
+		<ModbusInitData ID='719' Addr='719' Name='Задание неплановой мощности от УТК_FLAG' Scale='1' />
+		<ModbusInitData ID='720' Addr='720' Name='Частота 110 кВ (ЦПУ)' Scale='0.01' />
+		<ModbusInitData ID='721' Addr='721' Name='Частота 110 кВ (ЦПУ)_FLAG' Scale='1' />
+		<ModbusInitData ID='722' Addr='722' Name='Частота 220 кВ (ЦПУ)' Scale='0.01' />
+		<ModbusInitData ID='723' Addr='723' Name='Частота 220 кВ (ЦПУ)_FLAG' Scale='1' />
+		<ModbusInitData ID='724' Addr='724' Name='Частота 500 кВ (ЦПУ)' Scale='0.01' />
+		<ModbusInitData ID='725' Addr='725' Name='Частота 500 кВ (ЦПУ)_FLAG' Scale='1' />
+		<ModbusInitData ID='726' Addr='726' Name='Ток фидера 6 кВ Фильтр 1' Scale='1' />
+		<ModbusInitData ID='727' Addr='727' Name='Ток фидера 6 кВ Фильтр 1_FLAG' Scale='1' />
+		<ModbusInitData ID='728' Addr='728' Name='Ток фидера 6 кВ Фильтр 2' Scale='1' />
+		<ModbusInitData ID='729' Addr='729' Name='Ток фидера 6 кВ Фильтр 2_FLAG' Scale='1' />
+		<ModbusInitData ID='730' Addr='730' Name='Напряжение 500 кВ (ЦПУ)' Scale='1' />
+		<ModbusInitData ID='731' Addr='731' Name='Напряжение 500 кВ (ЦПУ)_FLAG' Scale='1' />
+		<ModbusInitData ID='732' Addr='732' Name='Напряжение 110 кВ 1 СШ' Scale='0.1' />
+		<ModbusInitData ID='733' Addr='733' Name='Напряжение 110 кВ 1 СШ_FLAG' Scale='1' />
+		<ModbusInitData ID='734' Addr='734' Name='Напряжение 110 кВ 2 СШ' Scale='0.1' />
+		<ModbusInitData ID='735' Addr='735' Name='Напряжение 110 кВ 2 СШ_FLAG' Scale='1' />
+		<ModbusInitData ID='736' Addr='736' Name='Напряжение 220 кВ 1 СШ' Scale='0.1' />
+		<ModbusInitData ID='737' Addr='737' Name='Напряжение 220 кВ 1 СШ_FLAG' Scale='1' />
+		<ModbusInitData ID='738' Addr='738' Name='Напряжение 220 кВ 2 СШ' Scale='0.1' />
+		<ModbusInitData ID='739' Addr='739' Name='Напряжение 220 кВ 2 СШ_FLAG' Scale='1' />
+		<ModbusInitData ID='740' Addr='740' Name='Напряжение на шинах 7Т' Scale='0.001' />
+		<ModbusInitData ID='741' Addr='741' Name='Напряжение на шинах 7Т_FLAG' Scale='1' />
+		<ModbusInitData ID='742' Addr='742' Name='Напряжение на шинах 8Т' Scale='0.001' />
+		<ModbusInitData ID='743' Addr='743' Name='Напряжение на шинах 8Т_FLAG' Scale='1' />
+		<ModbusInitData ID='744' Addr='744' Name='' Scale='1' />
+		<ModbusInitData ID='745' Addr='745' Name='' Scale='1' />
+		<ModbusInitData ID='746' Addr='746' Name='Температура наружного воздуха' Scale='1' />
+		<ModbusInitData ID='747' Addr='747' Name='Температура наружного воздуха_FLAG' Scale='1' />
+		<ModbusInitData ID='748' Addr='748' Name='Температура щитовых сооружений' Scale='1' />
+		<ModbusInitData ID='749' Addr='749' Name='Температура щитовых сооружений_FLAG' Scale='1' />
+		<ModbusInitData ID='750' Addr='750' Name='Суммарная Р ГЭС' Scale='0.1' />
+		<ModbusInitData ID='751' Addr='751' Name='Суммарная Р ГЭС_FLAG' Scale='1' />
+		<ModbusInitData ID='752' Addr='752' Name='Суммарная Р шин 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='753' Addr='753' Name='Суммарная Р шин 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='754' Addr='754' Name='Суммарная Р шин 220 кВ' Scale='0.1' />
+		<ModbusInitData ID='755' Addr='755' Name='Суммарная Р шин 220 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='756' Addr='756' Name='Суммарная Р шин 500 кВ' Scale='1' />
+		<ModbusInitData ID='757' Addr='757' Name='Суммарная Р шин 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='758' Addr='758' Name='Суммарная Q шин 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='759' Addr='759' Name='Суммарная Q шин 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='760' Addr='760' Name='Суммарная Q шин 220 кВ' Scale='0.1' />
+		<ModbusInitData ID='761' Addr='761' Name='Суммарная Q шин 220 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='762' Addr='762' Name='Суммарная Q шин 500 кВ' Scale='1' />
+		<ModbusInitData ID='763' Addr='763' Name='Суммарная Q шин 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='764' Addr='764' Name='Суммарная Q ГЭС' Scale='0.1' />
+		<ModbusInitData ID='765' Addr='765' Name='Суммарная Q ГЭС_FLAG' Scale='1' />
+		<ModbusInitData ID='766' Addr='766' Name='Заданная Р от ПА' Scale='1' />
+		<ModbusInitData ID='767' Addr='767' Name='Заданная Р от ПА_FLAG' Scale='1' />
+		<ModbusInitData ID='768' Addr='768' Name='Расход воды (Q) ВП' Scale='1' />
+		<ModbusInitData ID='769' Addr='769' Name='Расход воды (Q) ВП_FLAG' Scale='1' />
+		<ModbusInitData ID='770' Addr='770' Name='Блок 5АТ, P нейтрали' Scale='0.1' />
+		<ModbusInitData ID='771' Addr='771' Name='Блок 5АТ, P нейтрали_FLAG' Scale='1' />
+		<ModbusInitData ID='772' Addr='772' Name='Блок 5АТ, t масла' Scale='1' />
+		<ModbusInitData ID='773' Addr='773' Name='Блок 5АТ, t масла_FLAG' Scale='1' />
+		<ModbusInitData ID='774' Addr='774' Name='Блок 6АТ, P нейтрали' Scale='0.1' />
+		<ModbusInitData ID='775' Addr='775' Name='Блок 6АТ, P нейтрали_FLAG' Scale='1' />
+		<ModbusInitData ID='776' Addr='776' Name='Блок 6АТ, t масла' Scale='1' />
+		<ModbusInitData ID='777' Addr='777' Name='Блок 6АТ, t масла_FLAG' Scale='1' />
+		<ModbusInitData ID='778' Addr='778' Name='Блок 2АТ, I обмотки ВДТ' Scale='1' />
+		<ModbusInitData ID='779' Addr='779' Name='Блок 2АТ, I обмотки ВДТ_FLAG' Scale='1' />
+		<ModbusInitData ID='780' Addr='780' Name='Блок 2АТ, U c низкой стороны' Scale='0.01' />
+		<ModbusInitData ID='781' Addr='781' Name='Блок 2АТ, U c низкой стороны_FLAG' Scale='1' />
+		<ModbusInitData ID='782' Addr='782' Name='Блок 2АТ, t масла, фаза А' Scale='1' />
+		<ModbusInitData ID='783' Addr='783' Name='Блок 2АТ, t масла, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='784' Addr='784' Name='Блок 2АТ, t масла, фаза В' Scale='1' />
+		<ModbusInitData ID='785' Addr='785' Name='Блок 2АТ, t масла, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='786' Addr='786' Name='Блок 2АТ, t масла, фаза С' Scale='1' />
+		<ModbusInitData ID='787' Addr='787' Name='Блок 2АТ, t масла, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='788' Addr='788' Name='Блок 2АТ, t масла, фаза ВДТ' Scale='1' />
+		<ModbusInitData ID='789' Addr='789' Name='Блок 2АТ, t масла, фаза ВДТ_FLAG' Scale='1' />
+		<ModbusInitData ID='790' Addr='790' Name='Блок 3АТ, I обмотки ВДТ' Scale='1' />
+		<ModbusInitData ID='791' Addr='791' Name='Блок 3АТ, I обмотки ВДТ_FLAG' Scale='1' />
+		<ModbusInitData ID='792' Addr='792' Name='Блок 3АТ, U c низкой стороны' Scale='0.01' />
+		<ModbusInitData ID='793' Addr='793' Name='Блок 3АТ, U c низкой стороны_FLAG' Scale='1' />
+		<ModbusInitData ID='794' Addr='794' Name='Блок 3АТ, t масла, фаза А' Scale='1' />
+		<ModbusInitData ID='795' Addr='795' Name='Блок 3АТ, t масла, фаза А_FLAG' Scale='1' />
+		<ModbusInitData ID='796' Addr='796' Name='Блок 3АТ, t масла, фаза В' Scale='1' />
+		<ModbusInitData ID='797' Addr='797' Name='Блок 3АТ, t масла, фаза В_FLAG' Scale='1' />
+		<ModbusInitData ID='798' Addr='798' Name='Блок 3АТ, t масла, фаза С' Scale='1' />
+		<ModbusInitData ID='799' Addr='799' Name='Блок 3АТ, t масла, фаза С_FLAG' Scale='1' />
+		<ModbusInitData ID='800' Addr='800' Name='Блок 3АТ, t масла, фаза ВДТ' Scale='1' />
+		<ModbusInitData ID='801' Addr='801' Name='Блок 3АТ, t масла, фаза ВДТ_FLAG' Scale='1' />
+		<ModbusInitData ID='802' Addr='802' Name='' Scale='1' />
+		<ModbusInitData ID='803' Addr='803' Name='' Scale='1' />
+		<ModbusInitData ID='804' Addr='804' Name='' Scale='1' />
+		<ModbusInitData ID='805' Addr='805' Name='' Scale='1' />
+		<ModbusInitData ID='806' Addr='806' Name='' Scale='1' />
+		<ModbusInitData ID='807' Addr='807' Name='' Scale='1' />
+		<ModbusInitData ID='808' Addr='808' Name='' Scale='1' />
+		<ModbusInitData ID='809' Addr='809' Name='' Scale='1' />
+		<ModbusInitData ID='810' Addr='810' Name='КШТ-1 110КВ' Scale='1' />
+		<ModbusInitData ID='811' Addr='811' Name='КШТ-1 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='812' Addr='812' Name='КШТ-1 110КВ' Scale='0.1' />
+		<ModbusInitData ID='813' Addr='813' Name='КШТ-1 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='814' Addr='814' Name='КШТ-1 110КВ' Scale='0.1' />
+		<ModbusInitData ID='815' Addr='815' Name='КШТ-1 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='816' Addr='816' Name='' Scale='1' />
+		<ModbusInitData ID='817' Addr='817' Name='' Scale='1' />
+		<ModbusInitData ID='818' Addr='818' Name='' Scale='1' />
+		<ModbusInitData ID='819' Addr='819' Name='' Scale='1' />
+		<ModbusInitData ID='820' Addr='820' Name='КШТ-2 110КВ' Scale='1' />
+		<ModbusInitData ID='821' Addr='821' Name='КШТ-2 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='822' Addr='822' Name='КШТ-2 110КВ' Scale='0.1' />
+		<ModbusInitData ID='823' Addr='823' Name='КШТ-2 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='824' Addr='824' Name='КШТ-2 110КВ' Scale='0.1' />
+		<ModbusInitData ID='825' Addr='825' Name='КШТ-2 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='826' Addr='826' Name='' Scale='1' />
+		<ModbusInitData ID='827' Addr='827' Name='' Scale='1' />
+		<ModbusInitData ID='828' Addr='828' Name='' Scale='1' />
+		<ModbusInitData ID='829' Addr='829' Name='' Scale='1' />
+		<ModbusInitData ID='830' Addr='830' Name='Каучук 110КВ' Scale='1' />
+		<ModbusInitData ID='831' Addr='831' Name='Каучук 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='832' Addr='832' Name='Каучук 110КВ' Scale='0.1' />
+		<ModbusInitData ID='833' Addr='833' Name='Каучук 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='834' Addr='834' Name='Каучук 110КВ' Scale='0.1' />
+		<ModbusInitData ID='835' Addr='835' Name='Каучук 110КВ_FLAG' Scale='1' />
+		<ModbusInitData ID='836' Addr='836' Name='' Scale='1' />
+		<ModbusInitData ID='837' Addr='837' Name='' Scale='1' />
+		<ModbusInitData ID='838' Addr='838' Name='' Scale='1' />
+		<ModbusInitData ID='839' Addr='839' Name='' Scale='1' />
+		<ModbusInitData ID='840' Addr='840' Name='ЧаТЭЦ 110 кВ' Scale='1' />
+		<ModbusInitData ID='841' Addr='841' Name='ЧаТЭЦ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='842' Addr='842' Name='ЧаТЭЦ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='843' Addr='843' Name='ЧаТЭЦ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='844' Addr='844' Name='ЧаТЭЦ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='845' Addr='845' Name='ЧаТЭЦ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='846' Addr='846' Name='' Scale='1' />
+		<ModbusInitData ID='847' Addr='847' Name='' Scale='1' />
+		<ModbusInitData ID='848' Addr='848' Name='' Scale='1' />
+		<ModbusInitData ID='849' Addr='849' Name='' Scale='1' />
+		<ModbusInitData ID='850' Addr='850' Name='Березовка 110 кВ' Scale='1' />
+		<ModbusInitData ID='851' Addr='851' Name='Березовка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='852' Addr='852' Name='Березовка 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='853' Addr='853' Name='Березовка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='854' Addr='854' Name='Березовка 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='855' Addr='855' Name='Березовка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='856' Addr='856' Name='' Scale='1' />
+		<ModbusInitData ID='857' Addr='857' Name='' Scale='1' />
+		<ModbusInitData ID='858' Addr='858' Name='' Scale='1' />
+		<ModbusInitData ID='859' Addr='859' Name='' Scale='1' />
+		<ModbusInitData ID='860' Addr='860' Name='Дубовая 110 кВ' Scale='1' />
+		<ModbusInitData ID='861' Addr='861' Name='Дубовая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='862' Addr='862' Name='Дубовая 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='863' Addr='863' Name='Дубовая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='864' Addr='864' Name='Дубовая 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='865' Addr='865' Name='Дубовая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='866' Addr='866' Name='' Scale='1' />
+		<ModbusInitData ID='867' Addr='867' Name='' Scale='1' />
+		<ModbusInitData ID='868' Addr='868' Name='' Scale='1' />
+		<ModbusInitData ID='869' Addr='869' Name='' Scale='1' />
+		<ModbusInitData ID='870' Addr='870' Name='Водозабор 1 - 110 кВ' Scale='1' />
+		<ModbusInitData ID='871' Addr='871' Name='Водозабор 1 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='872' Addr='872' Name='Водозабор 1 - 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='873' Addr='873' Name='Водозабор 1 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='874' Addr='874' Name='Водозабор 1 - 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='875' Addr='875' Name='Водозабор 1 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='876' Addr='876' Name='' Scale='1' />
+		<ModbusInitData ID='877' Addr='877' Name='' Scale='1' />
+		<ModbusInitData ID='878' Addr='878' Name='' Scale='1' />
+		<ModbusInitData ID='879' Addr='879' Name='' Scale='1' />
+		<ModbusInitData ID='880' Addr='880' Name='Водозабор 2 - 110 кВ' Scale='1' />
+		<ModbusInitData ID='881' Addr='881' Name='Водозабор 2 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='882' Addr='882' Name='Водозабор 2 - 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='883' Addr='883' Name='Водозабор 2 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='884' Addr='884' Name='Водозабор 2 - 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='885' Addr='885' Name='Водозабор 2 - 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='886' Addr='886' Name='' Scale='1' />
+		<ModbusInitData ID='887' Addr='887' Name='' Scale='1' />
+		<ModbusInitData ID='888' Addr='888' Name='' Scale='1' />
+		<ModbusInitData ID='889' Addr='889' Name='' Scale='1' />
+		<ModbusInitData ID='890' Addr='890' Name='Светлая 110 кВ' Scale='1' />
+		<ModbusInitData ID='891' Addr='891' Name='Светлая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='892' Addr='892' Name='Светлая 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='893' Addr='893' Name='Светлая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='894' Addr='894' Name='Светлая 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='895' Addr='895' Name='Светлая 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='896' Addr='896' Name='' Scale='1' />
+		<ModbusInitData ID='897' Addr='897' Name='' Scale='1' />
+		<ModbusInitData ID='898' Addr='898' Name='' Scale='1' />
+		<ModbusInitData ID='899' Addr='899' Name='' Scale='1' />
+		<ModbusInitData ID='900' Addr='900' Name='Ивановка 110 кВ' Scale='1' />
+		<ModbusInitData ID='901' Addr='901' Name='Ивановка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='902' Addr='902' Name='Ивановка 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='903' Addr='903' Name='Ивановка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='904' Addr='904' Name='Ивановка 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='905' Addr='905' Name='Ивановка 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='906' Addr='906' Name='' Scale='1' />
+		<ModbusInitData ID='907' Addr='907' Name='' Scale='1' />
+		<ModbusInitData ID='908' Addr='908' Name='' Scale='1' />
+		<ModbusInitData ID='909' Addr='909' Name='' Scale='1' />
+		<ModbusInitData ID='910' Addr='910' Name='ОВВ 110 кВ' Scale='1' />
+		<ModbusInitData ID='911' Addr='911' Name='ОВВ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='912' Addr='912' Name='ОВВ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='913' Addr='913' Name='ОВВ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='914' Addr='914' Name='ОВВ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='915' Addr='915' Name='ОВВ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='916' Addr='916' Name='' Scale='1' />
+		<ModbusInitData ID='917' Addr='917' Name='' Scale='1' />
+		<ModbusInitData ID='918' Addr='918' Name='' Scale='1' />
+		<ModbusInitData ID='919' Addr='919' Name='' Scale='1' />
+		<ModbusInitData ID='920' Addr='920' Name='' Scale='1' />
+		<ModbusInitData ID='921' Addr='921' Name='' Scale='1' />
+		<ModbusInitData ID='922' Addr='922' Name='' Scale='1' />
+		<ModbusInitData ID='923' Addr='923' Name='' Scale='1' />
+		<ModbusInitData ID='924' Addr='924' Name='' Scale='1' />
+		<ModbusInitData ID='925' Addr='925' Name='' Scale='1' />
+		<ModbusInitData ID='926' Addr='926' Name='' Scale='1' />
+		<ModbusInitData ID='927' Addr='927' Name='' Scale='1' />
+		<ModbusInitData ID='928' Addr='928' Name='' Scale='1' />
+		<ModbusInitData ID='929' Addr='929' Name='' Scale='1' />
+		<ModbusInitData ID='930' Addr='930' Name='Южная 500 кВ' Scale='1' />
+		<ModbusInitData ID='931' Addr='931' Name='Южная 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='932' Addr='932' Name='Южная 500 кВ' Scale='1' />
+		<ModbusInitData ID='933' Addr='933' Name='Южная 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='934' Addr='934' Name='Южная 500 кВ' Scale='1' />
+		<ModbusInitData ID='935' Addr='935' Name='Южная 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='936' Addr='936' Name='Южная 500 кВ' Scale='1' />
+		<ModbusInitData ID='937' Addr='937' Name='Южная 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='938' Addr='938' Name='Южная 500 кВ' Scale='0.01' />
+		<ModbusInitData ID='939' Addr='939' Name='Южная 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='940' Addr='940' Name='Карманово 500 кВ' Scale='1' />
+		<ModbusInitData ID='941' Addr='941' Name='Карманово 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='942' Addr='942' Name='Карманово 500 кВ' Scale='1' />
+		<ModbusInitData ID='943' Addr='943' Name='Карманово 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='944' Addr='944' Name='Карманово 500 кВ' Scale='1' />
+		<ModbusInitData ID='945' Addr='945' Name='Карманово 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='946' Addr='946' Name='Карманово 500 кВ' Scale='1' />
+		<ModbusInitData ID='947' Addr='947' Name='Карманово 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='948' Addr='948' Name='Карманово 500 кВ' Scale='0.01' />
+		<ModbusInitData ID='949' Addr='949' Name='Карманово 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='950' Addr='950' Name='Вятка 500 кВ' Scale='1' />
+		<ModbusInitData ID='951' Addr='951' Name='Вятка 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='952' Addr='952' Name='Вятка 500 кВ' Scale='1' />
+		<ModbusInitData ID='953' Addr='953' Name='Вятка 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='954' Addr='954' Name='Вятка 500 кВ' Scale='1' />
+		<ModbusInitData ID='955' Addr='955' Name='Вятка 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='956' Addr='956' Name='Вятка 500 кВ' Scale='1' />
+		<ModbusInitData ID='957' Addr='957' Name='Вятка 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='958' Addr='958' Name='Вятка 500 кВ' Scale='0.01' />
+		<ModbusInitData ID='959' Addr='959' Name='Вятка 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='960' Addr='960' Name='' Scale='1' />
+		<ModbusInitData ID='961' Addr='961' Name='' Scale='1' />
+		<ModbusInitData ID='962' Addr='962' Name='' Scale='1' />
+		<ModbusInitData ID='963' Addr='963' Name='' Scale='1' />
+		<ModbusInitData ID='964' Addr='964' Name='' Scale='1' />
+		<ModbusInitData ID='965' Addr='965' Name='' Scale='1' />
+		<ModbusInitData ID='966' Addr='966' Name='' Scale='1' />
+		<ModbusInitData ID='967' Addr='967' Name='' Scale='1' />
+		<ModbusInitData ID='968' Addr='968' Name='' Scale='1' />
+		<ModbusInitData ID='969' Addr='969' Name='' Scale='1' />
+		<ModbusInitData ID='970' Addr='970' Name='I ВВ 1Т 110 кВ' Scale='1' />
+		<ModbusInitData ID='971' Addr='971' Name='I ВВ 1Т 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='972' Addr='972' Name='P ВВ 1Т 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='973' Addr='973' Name='P ВВ 1Т 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='974' Addr='974' Name='Q ВВ 1Т 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='975' Addr='975' Name='Q ВВ 1Т 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='976' Addr='976' Name='' Scale='1' />
+		<ModbusInitData ID='977' Addr='977' Name='' Scale='1' />
+		<ModbusInitData ID='978' Addr='978' Name='' Scale='1' />
+		<ModbusInitData ID='979' Addr='979' Name='' Scale='1' />
+		<ModbusInitData ID='980' Addr='980' Name='I ВВ 5,6АТ 110 кВ' Scale='1' />
+		<ModbusInitData ID='981' Addr='981' Name='I ВВ 5,6АТ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='982' Addr='982' Name='P ВВ 5,6АТ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='983' Addr='983' Name='P ВВ 5,6АТ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='984' Addr='984' Name='Q ВВ 5,6АТ 110 кВ' Scale='0.1' />
+		<ModbusInitData ID='985' Addr='985' Name='Q ВВ 5,6АТ 110 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='986' Addr='986' Name='' Scale='1' />
+		<ModbusInitData ID='987' Addr='987' Name='' Scale='1' />
+		<ModbusInitData ID='988' Addr='988' Name='' Scale='1' />
+		<ModbusInitData ID='989' Addr='989' Name='' Scale='1' />
+		<ModbusInitData ID='990' Addr='990' Name='ВВ 2АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='991' Addr='991' Name='ВВ 2АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='992' Addr='992' Name='ВВ 2АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='993' Addr='993' Name='ВВ 2АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='994' Addr='994' Name='ВВ 2АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='995' Addr='995' Name='ВВ 2АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='996' Addr='996' Name='' Scale='1' />
+		<ModbusInitData ID='997' Addr='997' Name='' Scale='1' />
+		<ModbusInitData ID='998' Addr='998' Name='' Scale='1' />
+		<ModbusInitData ID='999' Addr='999' Name='' Scale='1' />
+		<ModbusInitData ID='1000' Addr='1000' Name='ВВ 3АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='1001' Addr='1001' Name='ВВ 3АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='1002' Addr='1002' Name='ВВ 3АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='1003' Addr='1003' Name='ВВ 3АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='1004' Addr='1004' Name='ВВ 3АТ 500 кВ' Scale='1' />
+		<ModbusInitData ID='1005' Addr='1005' Name='ВВ 3АТ 500 кВ_FLAG' Scale='1' />
+		<ModbusInitData ID='1006' Addr='1006' Name='' Scale='1' />
+		<ModbusInitData ID='1007' Addr='1007' Name='' Scale='1' />
+		<ModbusInitData ID='1008' Addr='1008' Name='' Scale='1' />
+		<ModbusInitData ID='1009' Addr='1009' Name='' Scale='1' />
+		<ModbusInitData ID='1010' Addr='1010' Name='' Scale='1' />
+
+
+
+	</Data>
+
+</ModbusInitDataArray>

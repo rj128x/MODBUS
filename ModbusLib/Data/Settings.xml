@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<LogPath>C:/MBData/Log</LogPath>
+	<DataPath>C:/MBData</DataPath>
+	<Databases>
+		<DBInfo>
+			<ID>P3000</ID>
+			<Address>192.168.140.240</Address>
+			<DBName>Piramida3000</DBName>
+			<User>sa</User>
+			<Password>pswd</Password>
+		</DBInfo>
+	</Databases>
+</Settings>	
