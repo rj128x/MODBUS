@@ -192,13 +192,19 @@ namespace ModbusLib
 			}
 
 			foreach (KeyValuePair<string,List<string>> de in deletes) {
-				foreach (string del in de.Value) {
-					string delSQL=String.Format("DELETE from DATA where {0}", del);
-					SqlCommand command=null;
-					command = PiramidaAccess.getConnection(de.Key).CreateCommand();
-					command.CommandText = delSQL;
-					Logger.Info(delSQL);
-					command.ExecuteNonQuery();
+				List<string> qDels=new List<string>();
+				for (int i=0; i < de.Value.Count; i++) {
+					qDels.Add(de.Value[i]);
+					if ((i + 1) % 20 == 0 || i == de.Value.Count - 1) {
+						string deletesSQL=String.Join(" OR ", qDels);
+						string deleteSQL=String.Format("{0}\n{1}", "DELETE from DATA where", deletesSQL);
+						SqlCommand command=null;
+						command = PiramidaAccess.getConnection(de.Key).CreateCommand();
+						command.CommandText = deleteSQL;
+						Logger.Info(deleteSQL);
+						command.ExecuteNonQuery();
+						qDels = new List<string>();
+					}
 				}
 			}
 			

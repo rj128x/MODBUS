@@ -62,6 +62,8 @@ namespace ModbusLib
 
 		public List<DBInfo> Databases;
 
+		public List<String> InitFiles;
+
 		private SortedList<string,DBInfo> dbInfoList;
 		[System.Xml.Serialization.XmlIgnore]
 		public SortedList<string, DBInfo> DBInfoList {

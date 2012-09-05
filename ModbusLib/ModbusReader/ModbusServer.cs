@@ -68,7 +68,7 @@ namespace ModbusLib
 		
 	}
 
-	public delegate void FinishEvent(SortedList<int, double> ResultData);
+	public delegate void FinishEvent(string InitArrayID,SortedList<int, double> ResultData);
 
 	public class ModbusDataReader
 	{
@@ -149,10 +149,9 @@ namespace ModbusLib
 			if (!finished) {
 				continueRead();
 			} else {
-				Logger.Info("Finish reading");
 				SortedList<int, double> ResultData=getResultData();
 				if (OnFinish != null) {
-					OnFinish(ResultData);
+					OnFinish(InitArr.ID, ResultData);
 				}
 			}
 		}
