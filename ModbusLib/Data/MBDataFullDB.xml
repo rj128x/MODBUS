@@ -230,9 +230,9 @@
 		<ModbusInitData ID='213' Addr='213' Name='Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='214' Addr='214' Name='Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='215' Addr='215' Name='Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='216' Addr='216' Name='Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='216' Addr='216' Name='Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='217' Addr='217' Name='Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='218' Addr='218' Name='Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='218' Addr='218' Name='Реактивная мощность' Scale='0.1' WriteToDBHH='1'  WriteToDBMin='1'/>
 		<ModbusInitData ID='219' Addr='219' Name='Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='220' Addr='220' Name='Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='221' Addr='221' Name='Ток статора, фаза А_FLAG' Scale='1' />
@@ -280,9 +280,9 @@
 		<ModbusInitData ID='263' Addr='263' Name='Г2 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='264' Addr='264' Name='Г2 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='265' Addr='265' Name='Г2 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='266' Addr='266' Name='Г2 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='266' Addr='266' Name='Г2 Активная мощность' Scale='0.1' WriteToDBHH='1'  WriteToDBMin='1'/>
 		<ModbusInitData ID='267' Addr='267' Name='Г2 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='268' Addr='268' Name='Г2 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='268' Addr='268' Name='Г2 Реактивная мощность' Scale='0.1' WriteToDBHH='1'  WriteToDBMin='1'/>
 		<ModbusInitData ID='269' Addr='269' Name='Г2 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='270' Addr='270' Name='Г2 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='271' Addr='271' Name='Г2 Ток статора, фаза А_FLAG' Scale='1' />
@@ -330,9 +330,9 @@
 		<ModbusInitData ID='313' Addr='313' Name='Г3 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='314' Addr='314' Name='Г3 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='315' Addr='315' Name='Г3 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='316' Addr='316' Name='Г3 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='316' Addr='316' Name='Г3 Активная мощность' Scale='0.1' WriteToDBHH='1'  WriteToDBMin='1'/>
 		<ModbusInitData ID='317' Addr='317' Name='Г3 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='318' Addr='318' Name='Г3 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='318' Addr='318' Name='Г3 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='319' Addr='319' Name='Г3 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='320' Addr='320' Name='Г3 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='321' Addr='321' Name='Г3 Ток статора, фаза А_FLAG' Scale='1' />
@@ -380,9 +380,9 @@
 		<ModbusInitData ID='363' Addr='363' Name='Г4 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='364' Addr='364' Name='Г4 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='365' Addr='365' Name='Г4 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='366' Addr='366' Name='Г4 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='366' Addr='366' Name='Г4 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='367' Addr='367' Name='Г4 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='368' Addr='368' Name='Г4 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='368' Addr='368' Name='Г4 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='369' Addr='369' Name='Г4 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='370' Addr='370' Name='Г4 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='371' Addr='371' Name='Г4 Ток статора, фаза А_FLAG' Scale='1' />
@@ -430,9 +430,9 @@
 		<ModbusInitData ID='413' Addr='413' Name='Г5 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='414' Addr='414' Name='Г5 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='415' Addr='415' Name='Г5 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='416' Addr='416' Name='Г5 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='416' Addr='416' Name='Г5 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='417' Addr='417' Name='Г5 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='418' Addr='418' Name='Г5 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='418' Addr='418' Name='Г5 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='419' Addr='419' Name='Г5 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='420' Addr='420' Name='Г5 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='421' Addr='421' Name='Г5 Ток статора, фаза А_FLAG' Scale='1' />
@@ -480,9 +480,9 @@
 		<ModbusInitData ID='463' Addr='463' Name='Г6 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='464' Addr='464' Name='Г6 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='465' Addr='465' Name='Г6 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='466' Addr='466' Name='Г6 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='466' Addr='466' Name='Г6 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='467' Addr='467' Name='Г6 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='468' Addr='468' Name='Г6 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='468' Addr='468' Name='Г6 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='469' Addr='469' Name='Г6 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='470' Addr='470' Name='Г6 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='471' Addr='471' Name='Г6 Ток статора, фаза А_FLAG' Scale='1' />
@@ -530,9 +530,9 @@
 		<ModbusInitData ID='513' Addr='513' Name='Г7 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='514' Addr='514' Name='Г7 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='515' Addr='515' Name='Г7 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='516' Addr='516' Name='Г7 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='516' Addr='516' Name='Г7 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='517' Addr='517' Name='Г7 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='518' Addr='518' Name='Г7 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='518' Addr='518' Name='Г7 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='519' Addr='519' Name='Г7 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='520' Addr='520' Name='Г7 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='521' Addr='521' Name='Г7 Ток статора, фаза А_FLAG' Scale='1' />
@@ -580,9 +580,9 @@
 		<ModbusInitData ID='563' Addr='563' Name='Г8 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='564' Addr='564' Name='Г8 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='565' Addr='565' Name='Г8 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='566' Addr='566' Name='Г8 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='566' Addr='566' Name='Г8 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='567' Addr='567' Name='Г8 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='568' Addr='568' Name='Г8 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='568' Addr='568' Name='Г8 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='569' Addr='569' Name='Г8 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='570' Addr='570' Name='Г8 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='571' Addr='571' Name='Г8 Ток статора, фаза А_FLAG' Scale='1' />
@@ -630,9 +630,9 @@
 		<ModbusInitData ID='613' Addr='613' Name='Г9 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='614' Addr='614' Name='Г9 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='615' Addr='615' Name='Г9 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='616' Addr='616' Name='Г9 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='616' Addr='616' Name='Г9 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='617' Addr='617' Name='Г9 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='618' Addr='618' Name='Г9 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='618' Addr='618' Name='Г9 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='619' Addr='619' Name='Г9 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='620' Addr='620' Name='Г9 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='621' Addr='621' Name='Г9 Ток статора, фаза А_FLAG' Scale='1' />
@@ -680,9 +680,9 @@
 		<ModbusInitData ID='663' Addr='663' Name='Г10 Напряжение ротора_FLAG' Scale='1' />
 		<ModbusInitData ID='664' Addr='664' Name='Г10 Напряжение статора' Scale='0.01' />
 		<ModbusInitData ID='665' Addr='665' Name='Г10 Напряжение статора_FLAG' Scale='1' />
-		<ModbusInitData ID='666' Addr='666' Name='Г10 Активная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='666' Addr='666' Name='Г10 Активная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='667' Addr='667' Name='Г10 Активная мощность_FLAG' Scale='1' />
-		<ModbusInitData ID='668' Addr='668' Name='Г10 Реактивная мощность' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='668' Addr='668' Name='Г10 Реактивная мощность' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='669' Addr='669' Name='Г10 Реактивная мощность_FLAG' Scale='1' />
 		<ModbusInitData ID='670' Addr='670' Name='Г10 Ток статора, фаза А' Scale='1' />
 		<ModbusInitData ID='671' Addr='671' Name='Г10 Ток статора, фаза А_FLAG' Scale='1' />
@@ -764,7 +764,7 @@
 		<ModbusInitData ID='747' Addr='747' Name='Температура наружного воздуха_FLAG' Scale='1' />
 		<ModbusInitData ID='748' Addr='748' Name='Температура щитовых сооружений' Scale='1' WriteToDBHH='1'/>
 		<ModbusInitData ID='749' Addr='749' Name='Температура щитовых сооружений_FLAG' Scale='1' />
-		<ModbusInitData ID='750' Addr='750' Name='Суммарная Р ГЭС' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='750' Addr='750' Name='Суммарная Р ГЭС' Scale='0.1' WriteToDBHH='1' WriteToDBMin='1'/>
 		<ModbusInitData ID='751' Addr='751' Name='Суммарная Р ГЭС_FLAG' Scale='1' />
 		<ModbusInitData ID='752' Addr='752' Name='Суммарная Р шин 110 кВ' Scale='0.1' WriteToDBHH='1'/>
 		<ModbusInitData ID='753' Addr='753' Name='Суммарная Р шин 110 кВ_FLAG' Scale='1' />
@@ -778,7 +778,7 @@
 		<ModbusInitData ID='761' Addr='761' Name='Суммарная Q шин 220 кВ_FLAG' Scale='1' />
 		<ModbusInitData ID='762' Addr='762' Name='Суммарная Q шин 500 кВ' Scale='1' WriteToDBHH='1'/>
 		<ModbusInitData ID='763' Addr='763' Name='Суммарная Q шин 500 кВ_FLAG' Scale='1' />
-		<ModbusInitData ID='764' Addr='764' Name='Суммарная Q ГЭС' Scale='0.1' WriteToDBHH='1'/>
+		<ModbusInitData ID='764' Addr='764' Name='Суммарная Q ГЭС' Scale='0.1' WriteToDBHH='1'  WriteToDBMin='1'/>
 		<ModbusInitData ID='765' Addr='765' Name='Суммарная Q ГЭС_FLAG' Scale='1' />
 		<ModbusInitData ID='766' Addr='766' Name='Заданная Р от ПА' Scale='1' />
 		<ModbusInitData ID='767' Addr='767' Name='Заданная Р от ПА_FLAG' Scale='1' />

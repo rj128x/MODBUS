@@ -94,21 +94,37 @@ namespace ModbusLib
 		}
 
 
-		public DataDBWriter(string fileName, ModbusInitDataArray initArray) {
-			FileName = fileName;
+		public DataDBWriter(ModbusInitDataArray initArray) {
+			InitArray = initArray;
 			Headers = new List<int>();
 			Dates = new List<DateTime>();
-			Data = new SortedList<int, DataDBRecord>();
-			InitArray = initArray;
+			Data = new SortedList<int, DataDBRecord>();		
+		}
+
+		public bool init(string fileName) {
+			FileName = fileName;			
+			Headers.Clear();
+			Dates.Clear();
+			Data.Clear();
+			
+			return File.Exists(fileName); 
 		}
 
 		public void ReadAll() {
-			reader = new StreamReader(fileName);
-			readHeader();
-			readData();
-			Reader.Close();
+			try {
+				reader = new StreamReader(fileName);
+				readHeader();
+				readData();
+			} catch {
+				Logger.Error("Ошибка при чтении данных");
+			} finally {
+				Reader.Close();
+			}			
+			
 			foreach (DataDBRecord rec in Data.Values) {
-				rec.Avg = rec.Avg / rec.Count;
+				if (rec.Count > 0) {
+					rec.Avg = rec.Avg / rec.Count;
+				}
 			}
 
 		}
@@ -157,7 +173,7 @@ namespace ModbusLib
 
 		}
 
-		public void writeData() {
+		public void writeData(RWModeEnum mode) {
 			SortedList<string,List<string>> inserts=new SortedList<string, List<string>>();
 			SortedList<string,List<string>> deletes=new SortedList<string, List<string>>();
 			string insertIntoHeader="INSERT INTO Data (parnumber,object,item,value0,objtype,data_date,rcvstamp,season)";
@@ -166,9 +182,9 @@ namespace ModbusLib
 			foreach (DataDBRecord rec in Data.Values) {
 				ModbusInitData init=InitArray.FullData[rec.Header];
 				if (init.WriteToDBHH || init.WriteToDBMin) {
-					if (init.WriteToDBMin) {
-						string insert=String.Format(frmt, init.ParNumberMin, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now, 0);
-						string delete=String.Format(frmDel, init.ParNumberMin, init.Obj, init.ObjType, init.Item, Date.AddMinutes(30));
+					if (init.WriteToDBMin && mode==RWModeEnum.min) {
+						string insert=String.Format(frmt, init.ParNumberMin, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(1), DateTime.Now, 0);
+						string delete=String.Format(frmDel, init.ParNumberMin, init.Obj, init.ObjType, init.Item, Date.AddMinutes(1));
 						if (!inserts.ContainsKey(init.DBNameMin)) {
 							inserts.Add(init.DBNameMin, new List<string>());
 							deletes.Add(init.DBNameMin, new List<string>());
@@ -178,9 +194,9 @@ namespace ModbusLib
 						deletes[init.DBNameMin].Add(delete);
 					}
 
-					if (init.WriteToDBHH) {
-						string insert=String.Format(frmt, init.ParNumberHH, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(1), DateTime.Now, 0);
-						string delete=String.Format(frmDel, init.ParNumberHH, init.Obj, init.ObjType, init.Item, Date.AddMinutes(1));
+					if (init.WriteToDBHH && mode==RWModeEnum.hh) {
+						string insert=String.Format(frmt, init.ParNumberHH, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now, 0);
+						string delete=String.Format(frmDel, init.ParNumberHH, init.Obj, init.ObjType, init.Item, Date.AddMinutes(30));
 						if (!inserts.ContainsKey(init.DBNameHH)) {
 							inserts.Add(init.DBNameHH, new List<string>());
 							deletes.Add(init.DBNameHH, new List<string>());
@@ -201,8 +217,13 @@ namespace ModbusLib
 						SqlCommand command=null;
 						command = PiramidaAccess.getConnection(de.Key).CreateCommand();
 						command.CommandText = deleteSQL;
-						Logger.Info(deleteSQL);
-						command.ExecuteNonQuery();
+						//Logger.Info(deleteSQL);
+						try {
+							command.ExecuteNonQuery();
+						} catch (Exception e) {
+							Logger.Error("Ошибка в запросе "+e);
+							Logger.Info(deleteSQL);
+						}
 						qDels = new List<string>();
 					}
 				}
@@ -218,8 +239,13 @@ namespace ModbusLib
 						SqlCommand command=null;
 						command = PiramidaAccess.getConnection(de.Key).CreateCommand();
 						command.CommandText = insertSQL;
-						Logger.Info(insertSQL);
-						command.ExecuteNonQuery();
+						//Logger.Info(insertSQL);
+						try{
+							command.ExecuteNonQuery();
+						} catch (Exception e) {
+							Logger.Error("Ошибка в запросе " + e);
+							Logger.Info(insertSQL);
+						}
 						qInserts=new List<string>();
 					}
 				}

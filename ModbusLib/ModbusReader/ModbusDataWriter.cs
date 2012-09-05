@@ -54,16 +54,16 @@ namespace ModbusLib
 			if (createDir) {
 				Directory.CreateDirectory(dirName);
 			}
-			string fileName=String.Format("{0}\\data_{1}.csv",dirName,date.ToString("hh_mm"));
+			string fileName=String.Format("{0}\\data_{1}.csv",dirName,date.ToString("HH_mm"));
 			return fileName;
 		}
 
-		public static DateTime GetFileDate(DateTime date, RWModeEnum RWMode) {
+		public static DateTime GetFileDate(DateTime date, RWModeEnum RWMode, bool correctTime=true) {
 			int min=date.Minute;
 			if (RWMode == RWModeEnum.hh) {
 				min = min < 30 ? 0 : 30;
 			}
-			DateTime dt=new DateTime(date.Year, date.Month, date.Day, date.Hour - 2, min, 0);
+			DateTime dt=new DateTime(date.Year, date.Month, date.Day, date.Hour - (correctTime?Settings.single.HoursDiff:0), min, 0);
 			return dt;
 		}
 				
@@ -77,7 +77,7 @@ namespace ModbusLib
 
 				string fileName=GetFileName(InitArray, RWMode, currentDate, true);
 				
-				HeaderStr = String.Format("{0};{1}", CurrentDate.ToString("dd.MM.yyyy hh:mm:ss"), String.Join(";", Headers));
+				HeaderStr = String.Format("{0};{1}", CurrentDate.ToString("dd.MM.yyyy HH:mm:ss"), String.Join(";", Headers));
 				bool newFile=!File.Exists(fileName);				
 				currentWriter=new StreamWriter(fileName,true);
 				if (newFile) {
@@ -106,7 +106,7 @@ namespace ModbusLib
 					values.Add(de.Value);
 				}
 			}
-			string valueStr=String.Format("{0};{1}",DateTime.Now.AddHours(-2).ToString("dd.MM.yyyy hh:mm:ss"), String.Join(";", values)).Replace(',','.');
+			string valueStr=String.Format("{0};{1}",DateTime.Now.AddHours(-2).ToString("dd.MM.yyyy HH:mm:ss"), String.Join(";", values)).Replace(',','.');
 			CurrentWriter.WriteLine(valueStr);
 			CurrentWriter.Flush();
 		}

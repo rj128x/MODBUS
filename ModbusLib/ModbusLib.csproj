@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBWriter\DataDBWriter.cs" />
+    <Compile Include="DBWriter\MasterDBWriter.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="ModbusReader\MasterModbusReader.cs" />
     <Compile Include="ModbusReader\ModbusDataWriter.cs" />

@@ -60,6 +60,12 @@ namespace ModbusLib
 			}
 		}
 
+		private int hoursDiff;
+		public int HoursDiff {
+			get { return hoursDiff; }
+			set { hoursDiff = value; }
+		}
+
 		public List<DBInfo> Databases;
 
 		public List<String> InitFiles;

@@ -3,6 +3,7 @@
 			 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<LogPath>C:/MBData/Log</LogPath>
 	<DataPath>C:/MBData</DataPath>
+	<HoursDiff>2</HoursDiff>
 	<Databases>
 		<DBInfo>
 			<ID>PSV</ID>
