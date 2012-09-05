@@ -5,35 +5,6 @@ using System.Text;
 
 namespace ModbusLib
 {
-	public class ModbusServers
-	{
-		private static ModbusServers single;
-		
-		protected ModbusServers() {
-			servers = new SortedList<string, ModbusServer>(); 
-		}
-		protected SortedList<string,ModbusServer> servers;
-
-		protected ModbusServer get(string ip, ushort port) {
-			string full=ip + ":" + port;
-			if (servers.ContainsKey(full)) {
-				ModbusServer server=servers[full];
-				return server;
-			} else {
-				ModbusServer server = new ModbusServer(ip, port);
-				servers.Add(full, server);
-				return server;
-			}
-		}
-
-		public static ModbusServer Get(string ip, ushort port) {
-			if (single == null) {
-				single = new ModbusServers();
-			}
-			return single.get(ip, port);
-		}
-
-	}
 
 	public class ModbusServer
 	{
