@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 
 namespace ModbusLib
 {
@@ -68,7 +69,21 @@ namespace ModbusLib
 			set { dbInfoList = value; }
 		}
 
+		static Settings() {			
+			NFIPoint = new CultureInfo("ru-RU").NumberFormat;
+			NFIPoint.NumberDecimalSeparator = ".";
+		}
+		public static NumberFormatInfo NFIPoint;
+
 		public static void init() {
+			System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-GB");
+			ci.NumberFormat.NumberDecimalSeparator = ".";
+			ci.NumberFormat.NumberGroupSeparator = "";
+
+			System.Threading.Thread.CurrentThread.CurrentCulture = ci;
+			System.Threading.Thread.CurrentThread.CurrentUICulture = ci;	
+			
+
 			Settings settings=XMLSer<Settings>.fromXML("Data\\Settings.xml");
 			Settings.settings = settings;
 			settings.DBInfoList = new SortedList<string, DBInfo>();

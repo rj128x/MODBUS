@@ -133,12 +133,12 @@ namespace ModbusLib
 			string valsStr;
 			while ((valsStr = Reader.ReadLine()) != null) {
 				string[]valsArr=valsStr.Split(';');
-				bool isFirst=false;
+				bool isFirst=true;
 				int index=0;
 				foreach (string valStr in valsArr) {
 					if (!isFirst) {
 						double val=Convert.ToDouble(valStr);
-						int header=Headers[index - 1];
+						int header=Headers[index];
 						Data[header].Avg += val;
 						if (Data[header].Min > val) {
 							Data[header].Min = val;
@@ -157,18 +157,18 @@ namespace ModbusLib
 
 		}
 
-		protected void writeData() {
+		public void writeData() {
 			SortedList<string,List<string>> inserts=new SortedList<string, List<string>>();
 			SortedList<string,List<string>> deletes=new SortedList<string, List<string>>();
-			string insertIntoHeader="INSERT INTO Data (parnumber,object,item,value0,objtype,data_date,rcvstamp)";
-			string frmt="SELECT {0}, {1}, {2}, {3}, {4}, {5}, {6}";
-			string frmDel="(parnumber={0} and object={1} and objType={2} and data_date={3})";
+			string insertIntoHeader="INSERT INTO Data (parnumber,object,item,value0,objtype,data_date,rcvstamp,season)";
+			string frmt="SELECT {0}, {1}, {2}, {3}, {4}, '{5}', '{6}', {7}";
+			string frmDel="(parnumber={0} and object={1} and objType={2} and item={3} and data_date='{4}')";
 			foreach (DataDBRecord rec in Data.Values) {
 				ModbusInitData init=InitArray.FullData[rec.Header];
 				if (init.WriteToDBHH || init.WriteToDBMin) {
 					if (init.WriteToDBMin) {
-						string insert=String.Format(frmt, init.ParNumberMin, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now);
-						string delete=String.Format(frmDel, init.ParNumberMin, init.Obj, init.ObjType, Date.AddMinutes(30));
+						string insert=String.Format(frmt, init.ParNumberMin, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(30), DateTime.Now, 0);
+						string delete=String.Format(frmDel, init.ParNumberMin, init.Obj, init.ObjType, init.Item, Date.AddMinutes(30));
 						if (!inserts.ContainsKey(init.DBNameMin)) {
 							inserts.Add(init.DBNameMin, new List<string>());
 							deletes.Add(init.DBNameMin, new List<string>());
@@ -179,8 +179,8 @@ namespace ModbusLib
 					}
 
 					if (init.WriteToDBHH) {
-						string insert=String.Format(frmt, init.ParNumberHH, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(1), DateTime.Now);
-						string delete=String.Format(frmDel, init.ParNumberHH, init.Obj, init.ObjType, Date.AddMinutes(1));
+						string insert=String.Format(frmt, init.ParNumberHH, init.Obj, init.Item, rec.Avg, init.ObjType, Date.AddMinutes(1), DateTime.Now, 0);
+						string delete=String.Format(frmDel, init.ParNumberHH, init.Obj, init.ObjType, init.Item, Date.AddMinutes(1));
 						if (!inserts.ContainsKey(init.DBNameHH)) {
 							inserts.Add(init.DBNameHH, new List<string>());
 							deletes.Add(init.DBNameHH, new List<string>());
@@ -197,17 +197,26 @@ namespace ModbusLib
 					SqlCommand command=null;
 					command = PiramidaAccess.getConnection(de.Key).CreateCommand();
 					command.CommandText = delSQL;
+					Logger.Info(delSQL);
 					command.ExecuteNonQuery();
 				}
 			}
-
+			
 			foreach (KeyValuePair<string,List<string>> de in inserts) {
-				string insertsSQL=String.Join("\nUNION ALL\n", de.Value);
-				string insertSQL=String.Format("{0}\n{1}", insertIntoHeader, insertsSQL);
-				SqlCommand command=null;
-				command = PiramidaAccess.getConnection(de.Key).CreateCommand();
-				command.CommandText = insertSQL;
-				command.ExecuteNonQuery();
+				List<string> qInserts=new List<string>();
+				for (int i=0; i < de.Value.Count; i++) {					
+					qInserts.Add(de.Value[i]);
+					if ((i+1)%20==0 ||i==de.Value.Count-1){
+						string insertsSQL=String.Join("\nUNION ALL\n", qInserts);
+						string insertSQL=String.Format("{0}\n{1}", insertIntoHeader, insertsSQL);
+						SqlCommand command=null;
+						command = PiramidaAccess.getConnection(de.Key).CreateCommand();
+						command.CommandText = insertSQL;
+						Logger.Info(insertSQL);
+						command.ExecuteNonQuery();
+						qInserts=new List<string>();
+					}
+				}
 			}
 		}
 	}

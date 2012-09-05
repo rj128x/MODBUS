@@ -23,8 +23,8 @@ namespace ModbusConsole
 			
 			try {
 				Settings.init();
-				Logger.init(Logger.createFileLogger(Settings.single.LogPath,"log", new Logger()));
-				arrHH = XMLSer<ModbusInitDataArray>.fromXML("Data\\MBDataFull.xml");
+				Logger.init(Logger.createFileLogger(Settings.single.LogPath,"logR", new Logger()));
+				arrHH = XMLSer<ModbusInitDataArray>.fromXML("Data\\MBDataFullDB.xml");
 				arrHH.processData();
 				Logger.Info(String.Format("Чтение настроек ModBus: {0} записей", arrHH.MaxAddr));
 				

@@ -78,6 +78,7 @@ namespace ModbusLib.Piramida
 
 		public static SqlConnection getConnection(string dbName) {
 			SqlConnection con=new SqlConnection(getConnectionString(Settings.single.DBInfoList[dbName]));
+			con.Open();
 			return con;
 		}
 	}

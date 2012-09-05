@@ -6,11 +6,12 @@ using System.Text;
 namespace ModbusLib
 {
 	public enum RWModeEnum { hh, min }
+	
 	public class ModbusInitData
 	{
-		private string id;
+		private int id;
 		[System.Xml.Serialization.XmlAttribute]
-		public string ID {
+		public int ID {
 			get { return id; }
 			set { id = value; }
 		}
@@ -51,49 +52,49 @@ namespace ModbusLib
 			set { writeToDBHH = value; }
 		}
 
-		private int parNumberMin;
+		private int parNumberMin=-1;
 		[System.Xml.Serialization.XmlAttribute]
 		public int ParNumberMin {
 			get { return parNumberMin; }
 			set { parNumberMin = value; }
 		}
 
-		private int parNumberHH;
+		private int parNumberHH=-1;
 		[System.Xml.Serialization.XmlAttribute]
 		public int ParNumberHH {
 			get { return parNumberHH; }
 			set { parNumberHH = value; }
 		}
 
-		private int obj;
+		private int obj=-1;
 		[System.Xml.Serialization.XmlAttribute]
 		public int Obj {
 			get { return obj; }
 			set { obj = value; }
 		}
 
-		private int objType;
+		private int objType=-1;
 		[System.Xml.Serialization.XmlAttribute]
 		public int ObjType {
 			get { return objType; }
 			set { objType = value; }
 		}
 
-		private string dbNameMin;
+		private string dbNameMin=null;
 		[System.Xml.Serialization.XmlAttribute]
 		public string DBNameMin {
 			get { return dbNameMin; }
 			set { dbNameMin = value; }
 		}
 
-		private string dbNameHH;
+		private string dbNameHH=null;
 		[System.Xml.Serialization.XmlAttribute]
 		public string DBNameHH {
 			get { return dbNameHH; }
 			set { dbNameHH = value; }
 		}
 
-		private int item;
+		private int item=-1;
 		[System.Xml.Serialization.XmlAttribute]
 		public int Item {
 			get { return item; }
@@ -154,10 +155,54 @@ namespace ModbusLib
 			set { maxAddr = value; }
 		}
 
+		private int parNumberMin;
+		public int ParNumberMin {
+			get { return parNumberMin; }
+			set { parNumberMin = value; }
+		}
+
+		private int parNumberHH;
+		public int ParNumberHH {
+			get { return parNumberHH; }
+			set { parNumberHH = value; }
+		}
+
+		private int obj;
+		public int Obj {
+			get { return obj; }
+			set { obj = value; }
+		}
+
+		private int objType;
+		public int ObjType {
+			get { return objType; }
+			set { objType = value; }
+		}
+
+		private string dbNameMin;
+		public string DBNameMin {
+			get { return dbNameMin; }
+			set { dbNameMin = value; }
+		}
+
+		private string dbNameHH;
+		public string DBNameHH {
+			get { return dbNameHH; }
+			set { dbNameHH = value; }
+		}
+		
 		public void processData() {
 			FullData = new SortedList<int, ModbusInitData>();
 			MaxAddr = 0;
 			foreach (ModbusInitData init in Data) {
+				init.ParNumberHH=init.ParNumberHH==-1?ParNumberHH:init.ParNumberHH;
+				init.ParNumberMin = init.ParNumberMin == -1 ? ParNumberMin : init.ParNumberMin;
+				init.Obj = init.Obj == -1 ? Obj : init.Obj;
+				init.ObjType = init.ObjType == -1 ? ObjType : init.ObjType;
+				init.Item = init.Item == -1 ? init.ID : init.Item;
+				init.DBNameHH = init.DBNameHH == null ? DBNameHH : init.DBNameHH;
+				init.DBNameMin = init.DBNameMin == null ? DBNameMin : init.DBNameMin;
+				
 				FullData.Add(init.Addr, init);
 				if (MaxAddr < init.Addr) {
 					MaxAddr = init.Addr;

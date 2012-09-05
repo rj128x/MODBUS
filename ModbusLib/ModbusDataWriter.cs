@@ -106,7 +106,7 @@ namespace ModbusLib
 					values.Add(de.Value);
 				}
 			}
-			string valueStr=String.Format("{0};{1}",DateTime.Now.AddHours(-2).ToString("dd.MM.yyyy hh:mm:ss"), String.Join(";", values));
+			string valueStr=String.Format("{0};{1}",DateTime.Now.AddHours(-2).ToString("dd.MM.yyyy hh:mm:ss"), String.Join(";", values)).Replace(',','.');
 			CurrentWriter.WriteLine(valueStr);
 			CurrentWriter.Flush();
 		}
